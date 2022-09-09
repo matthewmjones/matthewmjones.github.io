@@ -21,7 +21,7 @@
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -47,15 +47,15 @@
 <li><a class="active" href="foundations.html"><span class="header-section-number">1</span> Foundations</a></li>
 <li><a class="" href="single-variable-calculus.html"><span class="header-section-number">2</span> Single Variable Calculus</a></li>
 <li><a class="" href="multi-variable-calculus.html"><span class="header-section-number">3</span> Multi-variable calculus</a></li>
-<li><a class="" href="week-4-optimisation.html"><span class="header-section-number">4</span> Week 4: Optimisation</a></li>
-<li><a class="" href="week-5-convex-and-constrained-optimisation.html"><span class="header-section-number">5</span> Week 5: Convex and Constrained Optimisation</a></li>
-<li><a class="" href="week-6-differential-equations.html"><span class="header-section-number">6</span> Week 6 Differential Equations</a></li>
-<li><a class="" href="week-7---second-order-differential-equations.html"><span class="header-section-number">7</span> Week 7 - Second order differential equations</a></li>
-<li><a class="" href="week-8---multiple-integration.html"><span class="header-section-number">8</span> Week 8 - Multiple Integration</a></li>
+<li><a class="" href="optimisation.html"><span class="header-section-number">4</span> Optimisation</a></li>
+<li><a class="" href="convex-and-constrained-optimisation.html"><span class="header-section-number">5</span> Convex and Constrained Optimisation</a></li>
+<li><a class="" href="differential-equations.html"><span class="header-section-number">6</span> Differential Equations</a></li>
+<li><a class="" href="second-order-differential-equations.html"><span class="header-section-number">7</span> Second order differential equations</a></li>
+<li><a class="" href="multiple-integration.html"><span class="header-section-number">8</span> Multiple Integration</a></li>
 </ul>
 
         <div class="book-extra">
-          
+          <p><a id="book-repo" href="https://github.com/matthewmjones">View book source <i class="fab fa-github"></i></a></p>
         </div>
       </nav>
 </div>
@@ -163,7 +163,6 @@ have their own special characters:</p>
 include the complex numbers as a subset, they’re useful when
 manipulating 3d vectors in computer graphics. They are denoted
 <span class="math inline">\(\mathbb{H}\)</span>.</p>
-<hr>
 </div>
 <div id="tuples" class="section level2" number="1.4">
 <h2>
@@ -186,7 +185,6 @@ items is called a <span class="math inline">\(n\)</span>-tuple.</p>
 <p>The set <span class="math inline">\(\mathbb{R}^n\)</span> is an important case, it consists of all the
 <span class="math inline">\(n\)</span>-tuples of the form <span class="math display">\[ (x_1, x_2, \ldots, x_n)\]</span> where each <span class="math inline">\(x_i\)</span> is
 a real number.</p>
-<hr>
 </div>
 <div id="functions" class="section level2" number="1.5">
 <h2>
@@ -204,14 +202,14 @@ f(A).
 <p><span class="math display">\[ f(x) = x^2.\]</span></p>
 <p>Then <span class="math inline">\(f(\mathbb{R}) = [0,\infty)\)</span>.</p>
 <div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<span style="display:block;" id="fig:squaregraph"></span>
 <iframe src="https://www.desmos.com/calculator/avyhcjhrsm?embed" width="672" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.1: The graph of <span class="math inline">\(f(x) = x^2\)</span>
 </p>
 </div>
-<p>The graph of this function is given in Figure <span class="math inline">\(\ref{fig:squarefunction}\)</span>.</p>
+<p>The graph of this function is given in Figure <a href="foundations.html#fig:squaregraph">1.1</a>.</p>
 <p>Note: the graph of a function <span class="math inline">\(f\colon A \to B\)</span> is a subset of
 <span class="math inline">\(A\times B\)</span>.</p>
 <p>We often define a function using the following two-line format, where
@@ -244,10 +242,10 @@ f\colon &amp;\mathbb{R}\to \mathbb{R}\\
 \end{aligned}
 \]</span></p>
 <p>This is called a <strong>piecewise</strong> function. It graph is given in Figure
-<span class="math inline">\(\ref{piecewise function}\)</span>.</p>
+<a href="foundations.html#fig:piecwiseexample">1.2</a>.</p>
 <div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-2"></span>
-<iframe src="https://www.desmos.com/calculator/zpdhprmi5a?embed" width="672" height="400px" data-external="1">
+<span style="display:block;" id="fig:piecwiseexample"></span>
+<iframe src="https://www.desmos.com/calculator/zpdhprmi5a?embed" width="90%" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.2: The graph of a piecewise function
@@ -266,17 +264,16 @@ g\colon &amp;X\to \mathbb{R}\\
                 \end{cases}
 \end{aligned}
 \]</span></p>
-<p>This has graph given below in Figure <span class="math inline">\(\ref{disconnected domain example}\)</span></p>
+<p>This has graph given below in Figure <a href="foundations.html#fig:disconnecteddomainexample">1.3</a>.</p>
 <div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-3"></span>
-<iframe src="https://https://www.desmos.com/calculator/ubmmubjbbt?embed" width="672" height="400px" data-external="1">
+<span style="display:block;" id="fig:disconnecteddomainexample"></span>
+<iframe src="https://www.desmos.com/calculator/7ruboqwixm?embed" width="90%" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.3: A domain that isn’t a single interval
 </p>
 </div>
 <p>Here, the range is <span class="math inline">\(f(X) = [-1,1]\)</span>.</p>
-<hr>
 </div>
 <div id="function-composition" class="section level2" number="1.6">
 <h2>
@@ -299,12 +296,14 @@ subset of the domain of <span class="math inline">\(f\)</span>.</p>
 \]</span> Then <span class="math inline">\(f\circ g\)</span> is defined for all <span class="math inline">\(x\in \mathbb{R}\)</span> since the range
 of <span class="math inline">\(g\)</span> satisfies <span class="math display">\[ g(\mathbb{R}) = (0,\infty) \subset [0,\infty)\]</span>
 which is the domain of <span class="math inline">\(f\)</span>.</p>
-<p>On the other hand if we define, <span class="math display">\[
+<p>On the other hand if we define,
+<span class="math display">\[
 \begin{aligned}
     h\colon &amp; \mathbb{R} \to \mathbb{R}\\
             &amp; x \mapsto 1-x^2.
 \end{aligned}
-\]</span> then <span class="math inline">\(f\circ h\)</span> cannot be defined because the range of <span class="math inline">\(h\)</span> is
+\]</span>
+then <span class="math inline">\(f\circ h\)</span> cannot be defined because the range of <span class="math inline">\(h\)</span> is
 <span class="math display">\[h(\mathbb{R}) = (-\infty,1] \not\subset [0,\infty)\]</span></p>
 </div>
 <div id="injectivity" class="section level2" number="1.7">
@@ -327,11 +326,14 @@ point or no points)</li>
 f\colon &amp;\mathbb{R}\to \mathbb{R}\\
     &amp;x \mapsto 1 - x - 2 x^3
 \end{aligned}
-\]</span> is injective. Its graph is in Figure
-<span class="math inline">\(\ref{injective function example}\)</span>.</p>
+\]</span>
+is injective. Its graph is in Figure @ref(fig:injective function example).</p>
 <div class="figure">
-<img src="img/InjectiveExample.png" alt=""><p class="caption">An injective
-function</p>
+<iframe src="https://www.desmos.com/calculator/2h7q6hhywz?embed" width="672" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+(#fig:injective function example)The graph of an injective function
+</p>
 </div>
 <p>Whereas the function</p>
 <p><span class="math display">\[
@@ -342,14 +344,13 @@ f\colon &amp;\mathbb{R}\to \mathbb{R}\\
 \]</span> is not injective. Its graph is given here, where the horizontal line
 drawn is an example of a line that intersects the graph at three points.</p>
 <div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-4"></span>
-<iframe src="https://www.desmos.com/calculator/mjuodylauw?embed" width="672" height="400px" data-external="1">
+<span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<iframe src="https://www.desmos.com/calculator/zwsdh2yz96?embed" width="672" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.4: A non-injective function
 </p>
 </div>
-<hr>
 </div>
 <div id="surjectivity" class="section level2" number="1.8">
 <h2>
@@ -379,7 +380,6 @@ f\colon &amp;\mathbb{R}\to [0,\infty)\\
     &amp;x \mapsto x^2
 \end{aligned}
 \]</span> then this <strong>is</strong> surjective.</p>
-<hr>
 </div>
 <div id="bijectivity-and-inverses" class="section level2" number="1.9">
 <h2>
@@ -400,7 +400,6 @@ introduce a new variable, <span class="math inline">\(y\)</span> say and change 
     (y-1)^{1/3} &amp;= x
 \end{aligned}
 \]</span> So that <span class="math inline">\(f^{-1} (y) = (y-1)^{1/3}\)</span>.</p>
-<hr>
 </div>
 <div id="increasing-and-decreasing-functions" class="section level2" number="1.10">
 <h2>
@@ -424,7 +423,6 @@ defined to be:</p>
 <strong>monotone</strong>.</p>
 <p>A function that is either stricly increasing or strictly decreasing is
 said to be <strong>strictly monotone</strong>.</p>
-<hr>
 </div>
 <div id="continuous-functions---the-basic-idea" class="section level2" number="1.11">
 <h2>
@@ -518,18 +516,12 @@ in its domain.</p>
 <span class="header-section-number">1.14</span> Working with limits<a class="anchor" aria-label="anchor" href="#working-with-limits"><i class="fas fa-link"></i></a>
 </h2>
 <p>To work with limits we introduce a number of important facts about them.</p>
-<div id="theorem-1" class="section level3" number="1.14.1">
-<h3>
-<span class="header-section-number">1.14.1</span> Theorem 1<a class="anchor" aria-label="anchor" href="#theorem-1"><i class="fas fa-link"></i></a>
-</h3>
-<p>If <span class="math inline">\(L = \lim_{x\to a} f(x)\)</span> then <span class="math inline">\(L\)</span> is unique - i.e. it is not possible
+<div class="theorem">
+<p><span id="thm:theorem1" class="theorem"><strong>Theorem 1.1  </strong></span>If <span class="math inline">\(L = \lim_{x\to a} f(x)\)</span> then <span class="math inline">\(L\)</span> is unique - i.e. it is not possible
 for a function to tend to two or more different limits.</p>
 </div>
-<div id="theorem-2" class="section level3" number="1.14.2">
-<h3>
-<span class="header-section-number">1.14.2</span> Theorem 2<a class="anchor" aria-label="anchor" href="#theorem-2"><i class="fas fa-link"></i></a>
-</h3>
-<p>If <span class="math inline">\(L = \lim_{x\to a} f(x)\)</span> and <span class="math inline">\(M = \lim_{x\to a} g(x)\)</span> then:</p>
+<div class="theorem">
+<p><span id="thm:theorem2" class="theorem"><strong>Theorem 1.2  </strong></span>If <span class="math inline">\(L = \lim_{x\to a} f(x)\)</span> and <span class="math inline">\(M = \lim_{x\to a} g(x)\)</span> then:</p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(\lim_{x \to a} f(x) + g(x) = L + M\)</span></li>
 <li><span class="math inline">\(\lim_{x \to a} f(x)g(x) = LM\)</span></li>
@@ -537,6 +529,7 @@ for a function to tend to two or more different limits.</p>
 <span class="math inline">\(\lim_{x \to a} f(x)/g(x) = L/M\)</span> as long as <span class="math inline">\(M\neq 0\)</span>
 </li>
 </ol>
+</div>
 <p>For example, since <span class="math display">\[
 \begin{aligned}
     \lim_{x \to 2} x^2 &amp;= 4\\
@@ -545,12 +538,8 @@ for a function to tend to two or more different limits.</p>
 \]</span> we have that <span class="math display">\[ \lim_{x\to 2} x^2 \cos \pi x = 4\times 1 = 4. \]</span> We
 can also say that
 <span class="math display">\[  \lim_{x\to 2} \frac{x^2}{\cos \pi x} = \frac{4}1 = 4. \]</span> And so on.</p>
-</div>
-<div id="theorem-3" class="section level3" number="1.14.3">
-<h3>
-<span class="header-section-number">1.14.3</span> Theorem 3<a class="anchor" aria-label="anchor" href="#theorem-3"><i class="fas fa-link"></i></a>
-</h3>
-<p>The following families of functions are continuous:</p>
+<div class="theorem">
+<p><span id="thm:theorem3" class="theorem"><strong>Theorem 1.3  </strong></span>The following families of functions are continuous:</p>
 <ul>
 <li>Polynomials</li>
 <li>Exponential functions and logarithms</li>
@@ -613,19 +602,14 @@ right-hand side) <span class="math inline">\(f(x)\)</span> tends to <span class=
 <li><a class="nav-link" href="#continuous-functions---the-basic-idea"><span class="header-section-number">1.11</span> Continuous functions - the basic idea</a></li>
 <li><a class="nav-link" href="#limits"><span class="header-section-number">1.12</span> Limits</a></li>
 <li><a class="nav-link" href="#applications-of-the-limit-continuity"><span class="header-section-number">1.13</span> Applications of the limit: continuity</a></li>
-<li>
-<a class="nav-link" href="#working-with-limits"><span class="header-section-number">1.14</span> Working with limits</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#theorem-1"><span class="header-section-number">1.14.1</span> Theorem 1</a></li>
-<li><a class="nav-link" href="#theorem-2"><span class="header-section-number">1.14.2</span> Theorem 2</a></li>
-<li><a class="nav-link" href="#theorem-3"><span class="header-section-number">1.14.3</span> Theorem 3</a></li>
-</ul>
-</li>
+<li><a class="nav-link" href="#working-with-limits"><span class="header-section-number">1.14</span> Working with limits</a></li>
 <li><a class="nav-link" href="#when-limits-dont-exist"><span class="header-section-number">1.15</span> When limits don’t exist</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+<li><a id="book-source" href="https://github.com/matthewmjones/blob/master/01-Foundations.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/matthewmjones/edit/master/01-Foundations.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
