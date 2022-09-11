@@ -67,11 +67,16 @@
 <h2>
 <span class="header-section-number">2.1</span> Applications of the limit: differentiation<a class="anchor" aria-label="anchor" href="#applications-of-the-limit-differentiation"><i class="fas fa-link"></i></a>
 </h2>
-<p>The derivative of a function <span class="math inline">\(f\colon \mathbb{R} \to \mathbb{R}\)</span> at a point <span class="math inline">\(a\)</span> is the <strong>gradient</strong> of the <strong>tangent</strong> to the function at the point <span class="math inline">\((a, f(a))\)</span> in its graph (Figure <span class="math inline">\(\ref{tangent}\)</span>).</p>
-<div class="figure">
-<img src="img/DerivativeAsATangent.png" alt=""><p class="caption">The derivative as the gradient of a tangent</p>
+<p>The derivative of a function <span class="math inline">\(f\colon \mathbb{R} \to \mathbb{R}\)</span> at a point <span class="math inline">\(a\)</span> is the <strong>gradient</strong> of the <strong>tangent</strong> to the function at the point <span class="math inline">\((a, f(a))\)</span> in its graph (Figure @ref{fig:tangent}).</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:tangent"></span>
+<iframe src="https://www.desmos.com/calculator/yccoqftytu?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.1: The graph of <span class="math inline">\(f(x)\)</span> and its tangent at <span class="math inline">\((x,f(x))\)</span>
+</p>
 </div>
-<p>The technique to calculate this is to calculate the gradient of successive approximations of the tangent as in Figure <span class="math inline">\(\ref{tangent approximations}\)</span>.</p>
+<p>The technique to calculate this is to calculate the gradient of successive approximations of the tangent as in Figure @ref{tangentapproximations}.</p>
 <p>Take a value <span class="math inline">\(h \neq 0\)</span> and calculate the gradient of the line joining <span class="math inline">\((a, f(a))\)</span> to <span class="math inline">\((a + h, f(a + h))\)</span>.</p>
 <p>We can calculate this gradient using the usual formula:
 <span class="math display">\[
@@ -81,8 +86,13 @@
                     &amp;= \frac{f(a + h) - f(a)}{h}
 \end{aligned}
 \]</span></p>
-<div class="figure">
-<img src="img/DerivativeAsALimit.png" alt=""><p class="caption">Successive approximations of the gradient</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:tangentapproximations"></span>
+<iframe src="https://www.desmos.com/calculator/qthvdwncre?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.2: Finding the derivative by successive estimation
+</p>
 </div>
 <p>The derivative is then the following limit:
 <span class="math display">\[ \lim_{h\to 0} \frac{f(a + h) - f(a)}h \]</span>
@@ -546,7 +556,7 @@ which gives the largest integer smaller than <span class="math inline">\(x\)</sp
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-09.</p>
+    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-11.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -113,7 +113,7 @@ for every set. In notation, for any set <span class="math inline">\(A\)</span>,<
 <p><strong>Intervals</strong> are especially useful sets of real numbers that lie
 between two values. The notation for intervals is the following:</p>
 <p><span class="math display">\[
-\begin{aligned}%
+\begin{aligned}[]
     [a, b] &amp;= \{ x\colon a\le x \le b\} \\
     (a, b) &amp;= \{ x\colon a&lt; x &lt; b\}, \\
     (a, b] &amp;= \{ x\colon a&lt; x \le b\},\\
@@ -201,9 +201,9 @@ f(A).
 \]</span> For example suppose <span class="math inline">\(f\colon \mathbb{R}\to \mathbb{R}\)</span> is defined by</p>
 <p><span class="math display">\[ f(x) = x^2.\]</span></p>
 <p>Then <span class="math inline">\(f(\mathbb{R}) = [0,\infty)\)</span>.</p>
-<div class="figure" style="text-align: center">
+<div class="figure">
 <span style="display:block;" id="fig:squaregraph"></span>
-<iframe src="https://www.desmos.com/calculator/avyhcjhrsm?embed" width="100%" height="400px" data-external="1">
+<iframe src="https://www.desmos.com/calculator/avyhcjhrsm?embed" width="672" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.1: The graph of <span class="math inline">\(f(x) = x^2\)</span>
@@ -243,9 +243,9 @@ f\colon &amp;\mathbb{R}\to \mathbb{R}\\
 \]</span></p>
 <p>This is called a <strong>piecewise</strong> function. It graph is given in Figure
 <a href="foundations.html#fig:piecwiseexample">1.2</a>.</p>
-<div class="figure" style="text-align: center">
+<div class="figure">
 <span style="display:block;" id="fig:piecwiseexample"></span>
-<iframe src="https://www.desmos.com/calculator/zpdhprmi5a?embed" width="100%" height="400px" data-external="1">
+<iframe src="https://www.desmos.com/calculator/zpdhprmi5a?embed" width="90%" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.2: The graph of a piecewise function
@@ -265,9 +265,9 @@ g\colon &amp;X\to \mathbb{R}\\
 \end{aligned}
 \]</span></p>
 <p>This has graph given below in Figure <a href="foundations.html#fig:disconnecteddomainexample">1.3</a>.</p>
-<div class="figure" style="text-align: center">
+<div class="figure">
 <span style="display:block;" id="fig:disconnecteddomainexample"></span>
-<iframe src="https://www.desmos.com/calculator/7ruboqwixm?embed" width="100%" height="400px" data-external="1">
+<iframe src="https://www.desmos.com/calculator/7ruboqwixm?embed" width="90%" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.3: A domain that isn’t a single interval
@@ -327,13 +327,12 @@ f\colon &amp;\mathbb{R}\to \mathbb{R}\\
     &amp;x \mapsto 1 - x - 2 x^3
 \end{aligned}
 \]</span>
-is injective. Its graph is in Figure <a href="foundations.html#fig:injectivefunctionexample">1.4</a>.</p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:injectivefunctionexample"></span>
-<iframe src="https://www.desmos.com/calculator/2h7q6hhywz?embed" width="100%" height="400px" data-external="1">
+is injective. Its graph is in Figure @ref(fig:injective function example).</p>
+<div class="figure">
+<iframe src="https://www.desmos.com/calculator/2h7q6hhywz?embed" width="672" height="400px" data-external="1">
 </iframe>
 <p class="caption">
-Figure 1.4: The graph of an injective function
+(#fig:injective function example)The graph of an injective function
 </p>
 </div>
 <p>Whereas the function</p>
@@ -344,12 +343,12 @@ f\colon &amp;\mathbb{R}\to \mathbb{R}\\
 \end{aligned}
 \]</span> is not injective. Its graph is given here, where the horizontal line
 drawn is an example of a line that intersects the graph at three points.</p>
-<div class="figure" style="text-align: center">
+<div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-1"></span>
-<iframe src="https://www.desmos.com/calculator/zwsdh2yz96?embed" width="100%" height="400px" data-external="1">
+<iframe src="https://www.desmos.com/calculator/zwsdh2yz96?embed" width="672" height="400px" data-external="1">
 </iframe>
 <p class="caption">
-Figure 1.5: A non-injective function
+Figure 1.4: A non-injective function
 </p>
 </div>
 </div>
@@ -438,14 +437,10 @@ f\colon &amp;\mathbb{R}\to \mathbb{R}\\
                 \end{cases}
 \end{aligned}
 \]</span> is said to be <strong>continuous</strong> since its graph consists of a single
-connected curve (see Figure <a href="foundations.html#fig:continuousexample">1.6</a>).</p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:continuousexample"></span>
-<iframe src="https://www.desmos.com/calculator/kgrfewysw4?embed" width="100%" height="400px" data-external="1">
-</iframe>
-<p class="caption">
-Figure 1.6: The graph of a typical continuous function
-</p>
+connected curve (see Figure <span class="math inline">\(\ref{continuous function example}\)</span>).</p>
+<div class="figure">
+<img src="img/ContinuousExample.png" alt=""><p class="caption">The graph of a continuous
+functio</p>
 </div>
 <p>If the graph of a function is <strong>not</strong> a single connected curve then the
 function is said to be <strong>discontinuous</strong>. For example, <span class="math display">\[
@@ -457,14 +452,10 @@ f\colon &amp;\mathbb{R}\to \mathbb{R}\\
                 \end{cases}
 \end{aligned}
 \]</span> is a discontinuous function (Figure
-<a href="foundations.html#fig:disconnectedexample">1.7</a>).</p>
+<span class="math inline">\(\ref{disconnected curve example}\)</span>).</p>
 <div class="figure">
-<span style="display:block;" id="fig:disconnectedexample"></span>
-<iframe src="https://www.desmos.com/calculator/bap1kqqbys?embed" width="672" height="400px" data-external="1">
-</iframe>
-<p class="caption">
-Figure 1.7: The graph of a typical continuous function
-</p>
+<img src="img/DiscontinuousExample.png" alt=""><p class="caption">The graph of a discontinuous
+function</p>
 </div>
 <p>Suppose the domain of <span class="math inline">\(f\)</span> is an interval.</p>
 <p>Note: if <span class="math inline">\(f\)</span> is both strictly monotone and continuous then it is
@@ -472,20 +463,16 @@ injective.</p>
 <p>This informal definition of continuity if fine to start with but what
 happens when we have more complicated functions. For example is the
 following function continuous? Its graph is given in Figure
-<a href="foundations.html#fig:standarddiscontinuous">1.8</a>.</p>
+<span class="math inline">\(\ref{standard discontinuous example}\)</span>.</p>
 <p><span class="math display">\[
 \begin{aligned}
     f\colon \mathbb{R}&amp;\to [-1,1]\\
     x&amp;\mapsto \begin{cases} \cos(1/x) &amp;\text{if } x\neq 0\\ 0 &amp;\text{if } x = 0\end{cases}
 \end{aligned}
 \]</span></p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:standarddiscontinuous"></span>
-<iframe src="https://www.desmos.com/calculator/gtqhjwaauc?embed" width="100%" height="400px" data-external="1">
-</iframe>
-<p class="caption">
-Figure 1.8: The graph of a typical continuous function
-</p>
+<div class="figure">
+<img src="img/DiscontinuousCos.png" alt=""><p class="caption">The graph of
+<span class="math inline">\(\cos(1/x)\)</span></p>
 </div>
 </div>
 <div id="limits" class="section level2" number="1.12">
@@ -495,14 +482,10 @@ Figure 1.8: The graph of a typical continuous function
 <p>To understand continuity better we need to understand limits.</p>
 <p>The function <span class="math inline">\(f\colon [0,2] \to \mathbb{R}\)</span> is defined to be
 <span class="math display">\[ f(x) = \begin{cases} x^3, &amp; x\neq 1\\ 2, &amp; x = 1\end{cases} \]</span></p>
-<p>The graph of this is given in Figure <a href="foundations.html#fig:limitexample">1.9</a>.</p>
+<p>The graph of this is given in Figure <span class="math inline">\(\ref{limit example}\)</span>.</p>
 <div class="figure">
-<span style="display:block;" id="fig:limitexample"></span>
-<iframe src="https://www.desmos.com/calculator/6vdpahe4bo?embed" width="672" height="400px" data-external="1">
-</iframe>
-<p class="caption">
-Figure 1.9: The graph of a typical continuous function
-</p>
+<img src="img/GraphWithDiscontinuity.png" alt=""><p class="caption">The limit of a
+function</p>
 </div>
 <p>If <span class="math inline">\(x\)</span> approaches <span class="math inline">\(1\)</span> from either side, <span class="math inline">\(f(x)\)</span> approaches <span class="math inline">\(1\)</span> also (even
 through <span class="math inline">\(f(1) = 2\)</span>). We say that <strong>the limit of</strong> <span class="math inline">\(f(x)\)</span> as <span class="math inline">\(x\)</span> tends to
@@ -513,6 +496,7 @@ find the limit of a function at any point and this is written
 <p>The idea of the limit is that the values <span class="math inline">\(f(x)\)</span> should be getting closer
 and closer to the limit as <span class="math inline">\(x\)</span> gets closer and closer to <span class="math inline">\(a\)</span> - although
 we don’t need <span class="math inline">\(f(a)\)</span> to be defined or to be the same as the limit.</p>
+<hr>
 </div>
 <div id="applications-of-the-limit-continuity" class="section level2" number="1.13">
 <h2>
@@ -525,6 +509,7 @@ in its domain.</p>
 <p>For example, the function we previously defined,
 <span class="math display">\[ f(x) = \begin{cases} x^3, &amp; x\neq 1\\ 2, &amp; x = 1\end{cases} \]</span>
 <span class="math display">\[ \lim_{x\to 1} f(x) = 1 \neq f(1).\]</span></p>
+<hr>
 </div>
 <div id="working-with-limits" class="section level2" number="1.14">
 <h2>
@@ -578,14 +563,10 @@ f(x) =  \begin{cases}
             1, &amp; x \ge 0.
         \end{cases}
 \]</span> The graph of this function shown in Figure
-<a href="foundations.html#fig:discontinuousexample">1.10</a>.</p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:discontinuousexample"></span>
-<iframe src="https://www.desmos.com/calculator/tjeoxwumul?embed" width="100%" height="400px" data-external="1">
-</iframe>
-<p class="caption">
-Figure 1.10: The graph of a typical continuous function
-</p>
+<span class="math inline">\(\ref{discontinuous example}\)</span>.</p>
+<div class="figure">
+<img src="img/DiscontinuousExample2.png" alt=""><p class="caption">Grpah of a function without a
+limit</p>
 </div>
 <p>As <span class="math inline">\(x\)</span> approaches <span class="math inline">\(0\)</span> from the negative side (the left-hand side) <span class="math inline">\(f(x)\)</span>
 tends to <span class="math inline">\(-1\)</span>.</p>
@@ -640,7 +621,7 @@ right-hand side) <span class="math inline">\(f(x)\)</span> tends to <span class=
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-11.</p>
+    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-09.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
