@@ -67,7 +67,7 @@
 <h2>
 <span class="header-section-number">2.1</span> Applications of the limit: differentiation<a class="anchor" aria-label="anchor" href="#applications-of-the-limit-differentiation"><i class="fas fa-link"></i></a>
 </h2>
-<p>The derivative of a function <span class="math inline">\(f\colon \mathbb{R} \to \mathbb{R}\)</span> at a point <span class="math inline">\(a\)</span> is the <strong>gradient</strong> of the <strong>tangent</strong> to the function at the point <span class="math inline">\((a, f(a))\)</span> in its graph (Figure @ref{fig:tangent}).</p>
+<p>The derivative of a function <span class="math inline">\(f\colon \mathbb{R} \to \mathbb{R}\)</span> at a point <span class="math inline">\(a\)</span> is the <strong>gradient</strong> of the <strong>tangent</strong> to the function at the point <span class="math inline">\((a, f(a))\)</span> in its graph (Figure <a href="single-variable-calculus.html#fig:tangent">2.1</a>).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:tangent"></span>
 <iframe src="https://www.desmos.com/calculator/yccoqftytu?embed" width="100%" height="400px" data-external="1">
@@ -76,7 +76,7 @@
 Figure 2.1: The graph of <span class="math inline">\(f(x)\)</span> and its tangent at <span class="math inline">\((x,f(x))\)</span>
 </p>
 </div>
-<p>The technique to calculate this is to calculate the gradient of successive approximations of the tangent as in Figure @ref{tangentapproximations}.</p>
+<p>The technique to calculate this is to calculate the gradient of successive approximations of the tangent as in Figure <a href="single-variable-calculus.html#fig:tangentapproximations">2.2</a>.</p>
 <p>Take a value <span class="math inline">\(h \neq 0\)</span> and calculate the gradient of the line joining <span class="math inline">\((a, f(a))\)</span> to <span class="math inline">\((a + h, f(a + h))\)</span>.</p>
 <p>We can calculate this gradient using the usual formula:
 <span class="math display">\[
@@ -106,9 +106,14 @@ If we can find this limit then we call it the <strong>derivative of <span class=
                                 &amp;= \frac{4h + h^2}h
     \end{aligned}
 \]</span>
-The graph of this function is given in Figure <span class="math inline">\(\ref{derivative calculation example}\)</span>.</p>
-<div class="figure">
-<img src="img/SquareDerivative.png" alt=""><p class="caption">The derivative of the square function</p>
+The graph of this function is given in Figure @ref{fig:derivativecalculationexample}.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:derivativecalculationexample"></span>
+<iframe src="https://www.desmos.com/calculator/qncxpoj6hc?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.3: Finding the derivative of the square function
+</p>
 </div>
 <p>Although this is not defined at <span class="math inline">\(h = 0\)</span>, the limit is <span class="math inline">\(4\)</span>. Hence,
 <span class="math display">\[f'(2) = 4\]</span></p>
@@ -127,9 +132,14 @@ This is the example we have seen previously. The limit
 <span class="math display">\[\lim_{h\to 0} \frac{g(0 + h) - g(0)}h \]</span>
 does not exist.</p>
 <p>Therefore, <span class="math inline">\(|x|\)</span> does not have a derivative at <span class="math inline">\(0\)</span>.</p>
-<p>In fact this is self-evident if you consider the graph. There is no tangent at the point <span class="math inline">\((0,0)\)</span> in its graph, Figure <span class="math inline">\(\ref{modulus graph}\)</span>.</p>
-<div class="figure">
-<img src="img/GraphOfAbs.png" alt=""><p class="caption">The graph of <span class="math inline">\(|x|\)</span></p>
+<p>In fact this is self-evident if you consider the graph. There is no tangent at the point <span class="math inline">\((0,0)\)</span> in its graph, Figure @ref{fig:modulusgraph}.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:modulusgraph"></span>
+<iframe src="https://www.desmos.com/calculator/a9gx9pdewl?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.4: The graph of the modulus function
+</p>
 </div>
 <div id="differentiability" class="section level3" number="2.1.1">
 <h3>
@@ -234,7 +244,6 @@ which doesn’t have a limit at <span class="math inline">\(0\)</span>.</p>
 <li>In general, <span class="math inline">\(C^n(X)\)</span> is the set of all functions that have <span class="math inline">\(n\)</span> continuous derivatives.</li>
 <li>The set <span class="math inline">\(C^\infty (X)\)</span> denotes the collection of functions that have derivatives of <strong>all</strong> orders. These functions are often called <strong>smooth</strong> functions.</li>
 </ul>
-<hr>
 </div>
 <div id="approximating-differentiable-functions" class="section level2" number="2.6">
 <h2>
@@ -266,9 +275,14 @@ These can provide useful approximations for functions, but we will see they have
 <h2>
 <span class="header-section-number">2.7</span> Applications of the limit: integration<a class="anchor" aria-label="anchor" href="#applications-of-the-limit-integration"><i class="fas fa-link"></i></a>
 </h2>
-<p>The integral of a function between two points <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is the signed area between the graph of the function and the horizontal axis for <span class="math inline">\(x \in [a,b]\)</span>, where “signed” means areas underneath the axis count negatively to the total area, as in Figure <span class="math inline">\(\ref{an integral}\)</span>.</p>
-<div class="figure">
-<img src="img/IntegralImage.png" alt=""><p class="caption">The integral of a function</p>
+<p>The integral of a function between two points <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is the signed area between the graph of the function and the horizontal axis for <span class="math inline">\(x \in [a,b]\)</span>, where “signed” means areas underneath the axis count negatively to the total area, as in Figure <a href="single-variable-calculus.html#fig:anintegral">2.5</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:anintegral"></span>
+<iframe src="https://www.desmos.com/calculator/ba606jbjdf?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.5: The integral of a function
+</p>
 </div>
 <p>We write it as
 <span class="math display">\[ \int_a^b f(x) \mathrm{d}x\]</span></p>
@@ -278,14 +292,18 @@ These can provide useful approximations for functions, but we will see they have
 <li>The integral is not defined as a limit, but it <em>almost</em> is, so we will develop it in this way.</li>
 <li>The area under a curve can be defined for functions that aren’t continuous by taking different parts of the interval and calculating the areas separately.</li>
 </ul>
-<p>Defining the integral properly is important, but difficult. One way is to partition the interval <span class="math inline">\([a,b]\)</span> into a sequence of smaller strips as shown in Figure <span class="math inline">\(\ref{riemann integral partition}\)</span>.</p>
-<div class="figure">
-<img src="img/IntegralDefinition.png" alt=""><p class="caption">The definition of the integral</p>
+<p>Defining the integral properly is important, but difficult. One way is to partition the interval <span class="math inline">\([a,b]\)</span> into a sequence of smaller strips as shown in Figure <a href="single-variable-calculus.html#fig:riemannintegralpartition">2.6</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:riemannintegralpartition"></span>
+<iframe src="https://www.desmos.com/calculator/vro6tavcsl?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.6: The definition of the integral
+</p>
 </div>
 <p>We then approximate these strips by rectangles. The main difficulty is ensuring that the limit, as the width of the stips tends to <span class="math inline">\(0\)</span>, is well-defined. This can be shown to be true in many cases and is called <strong>Riemann Integration</strong>, but the machinery you need to develop before you can do this is too far away from what we need to do in this module.</p>
 <p>The important thing to understand is that if we think of the integral of a function as the area between its graph and the horizontal azis, then this makes sense even for functions that are not continuous.</p>
 <p>Note: all the common rules of integration follow from this description of the integral.</p>
-<hr>
 </div>
 <div id="the-fundamental-theorem-of-calculus" class="section level2" number="2.8">
 <h2>
@@ -297,21 +315,44 @@ These can provide useful approximations for functions, but we will see they have
 <span class="header-section-number">2.8.1</span> Fundamental Theorem of Calculus<a class="anchor" aria-label="anchor" href="#fundamental-theorem-of-calculus"><i class="fas fa-link"></i></a>
 </h3>
 <p>Let <span class="math inline">\(f\colon [a,b] \to\mathbb{R}\)</span>, and define
-<span class="math display">\[ G(x) = \int_a^x f(t) \mathrm{d}t\]</span>
+<span class="math display">\[\begin{equation}
+  F(x) = \int_a^x f(t) \mathrm{d}t
+\end{equation}\]</span>
 for <span class="math inline">\(x \in [a,b]\)</span>.</p>
-<ol style="list-style-type: decimal">
-<li>
-<span class="math inline">\(G\)</span> is continuous. Furthermore if <span class="math inline">\(f\)</span> is continuous at <span class="math inline">\(x_0\in [a,b]\)</span> then <span class="math inline">\(G'(x_0)\)</span> exists and is equal to <span class="math inline">\(f(x_0)\)</span>.</li>
-<li>If there is a function <span class="math inline">\(F\)</span> such that <span class="math inline">\(F'(x) = f(x)\)</span> for all <span class="math inline">\(x\in [a,b]\)</span> then
+<p>For example if
 <span class="math display">\[
-\int_a^b f(x) \mathrm{d}x = F(b) - F(a)
+\begin{aligned}
+  f\colon [0,1] &amp;\to \mathbb{R}\\
+    x&amp;\mapsto 2
+\end{aligned}
 \]</span>
+Then
+<span class="math display">\[
+F(x) = \int_0^x 2 \,\mathrm{d}t = 2x, \qquad \text{for }x \in [0,1].
+\]</span>
+Here we can calculate the integral since it’s the area under the graph of <span class="math inline">\(f(x)=2\)</span>. This is a rectangle of height <span class="math inline">\(2\)</span> and width <span class="math inline">\(x\)</span>, this is drawin in Figure <a href="single-variable-calculus.html#fig:simpleintegralexample">2.7</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:simpleintegralexample"></span>
+<iframe src="https://www.desmos.com/calculator/vvtfjov6ka?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.7: The definition of the integral
+</p>
+</div>
+<p>The functions <span class="math inline">\(F(x)\)</span> can always be found as long as the area can be calculated.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-1" class="theorem"><strong>Theorem 2.1  (The Fundamental Theorem of Calculus) </strong></span>We have the following facts:</p>
+<ol style="list-style-type: decimal">
+<li>The integral of <span class="math inline">\(f\)</span> is
+<span class="math display">\[\int_a^b f(x) \,\mathrm{d}x = F(b) - F(a)\]</span>
 </li>
+<li>If <span class="math inline">\(f\)</span> is continuous at <span class="math inline">\(x_0\)</span> then <span class="math inline">\(F'(x_0) = f(x_0)\)</span>. In particular if <span class="math inline">\(f\)</span> is continuous at every point then <span class="math inline">\(F'(x) = f(x)\)</span>.</li>
+<li>
+<span class="math inline">\(F\)</span> is always continuous.</li>
 </ol>
-<p>The function <span class="math inline">\(F\)</span> in the second part is called the <strong>anti-derivative</strong> or you may have seen it as the <strong>indefinite integral</strong>.</p>
-<p>The Fundamental Theorem of Calculus says quite formally this: if <span class="math inline">\(f\)</span> is <strong>continuous</strong> then it has an antiderivative, <span class="math inline">\(F\)</span>, (i.e. <span class="math inline">\(F' = f\)</span>), and
-<span class="math display">\[\int_a^b f(x) \mathrm{d}x = F(b) - F(a).\]</span>
-However, it gives us the ability to deal with more difficult functions.</p>
+</div>
+<p>If <span class="math inline">\(f\)</span> is continuous then the function <span class="math inline">\(F\)</span> is called the <strong>anti-derivative</strong> or you may have seen it as the <strong>indefinite integral</strong>.</p>
+<p>The Fundamental Theorem of Calculus gives us a way of finding the integral. What you have learned previously is to use the second part of the theorem to find integrals. However notice that we can also now find itegrals of functions that aren’t continuous.</p>
 <p>For example, suppose,
 <span class="math display">\[
 f(x) =  \begin{cases}
@@ -321,9 +362,14 @@ f(x) =  \begin{cases}
 \]</span>
 Then <span class="math inline">\(f\)</span> is not continuous, so it has no antiderivative. So, for example, the integral,
 <span class="math display">\[ \int_{-1}^2 f(x) \mathrm{d}x\]</span>
-cannot be evaluated using the method you would normaly use, even though calculating the area between the graph and the horizontal axis is easy, and it’s <span class="math inline">\(1\)</span>, see Figure <span class="math inline">\(\ref{basic discontinuous integrable example}\)</span></p>
-<div class="figure">
-<img src="img/NonIntegrableExample.png" alt=""><p class="caption">An example of an function without an antiderivative</p>
+cannot be evaluated using the method you would normaly use, even though calculating the area between the graph and the horizontal axis is easy, and it’s <span class="math inline">\(1\)</span>, see Figure <a href="single-variable-calculus.html#fig:basicdiscontinuousintegrableexample">2.8</a></p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:basicdiscontinuousintegrableexample"></span>
+<iframe src="https://www.desmos.com/calculator/zkpjrild9j?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.8: An example of an function without an antiderivative
+</p>
 </div>
 <p>However, if we define <span class="math inline">\(G(x)\)</span> as in the theorem then
 <span class="math display">\[
@@ -501,9 +547,14 @@ This gives us a bit more flexibility.</p>
 <p>For example consider the <strong>floor function</strong>:
 <span class="math display">\[ f(x) = \lfloor x \rfloor\]</span>
 which gives the largest integer smaller than <span class="math inline">\(x\)</span>, e.g. <span class="math inline">\(f(2.3) = 2\)</span>, <span class="math inline">\(f(-12.3) = -13\)</span>, and so on.</p>
-<p>This function is <strong>right continuous</strong> but not left continuous. Its graph is shown in Figure <span class="math inline">\(\ref{floor function}\)</span>.</p>
-<div class="figure">
-<img src="img/GraphOfFloor.png" alt=""><p class="caption">The graph of the floor function</p>
+<p>This function is <strong>right continuous</strong> but not left continuous. Its graph is shown in Figure <a href="single-variable-calculus.html#fig:floorfunction">2.9</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:floorfunction"></span>
+<iframe src="https://www.desmos.com/calculator/4vjor3bnyt?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 2.9: The graph of the floor function
+</p>
 </div>
 
 </div>
@@ -556,7 +607,7 @@ which gives the largest integer smaller than <span class="math inline">\(x\)</sp
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-11.</p>
+    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-12.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

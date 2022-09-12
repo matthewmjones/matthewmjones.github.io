@@ -140,9 +140,14 @@ This is written
 </h3>
 <p>Suppose we want to find the maximum and minimum of the function
 <span class="math display">\[ f(x) = x + x|\cos x|, \qquad\pi\le x \le 2\pi.\]</span>
-The graph of this function is in figure <span class="math inline">\(\ref{constrained first example}\)</span>.</p>
-<div class="figure">
-<img src="img/ConstrainedFirstExample.png" alt=""><p class="caption">An example of a constrained optimistion problem</p>
+The graph of this function is in figure <a href="optimisation.html#fig:constrainedfirstexample">4.1</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:constrainedfirstexample"></span>
+<iframe src="https://www.desmos.com/calculator/sbfdekgoyc?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 4.1: An example of a constrained optimistion problem
+</p>
 </div>
 <p>From the graph we can see that
 <span class="math display">\[\min_{x\in [\pi, 2\pi]} f(x) = f\left(\frac{3\pi}2\right) = \frac{3\pi}2,\]</span>
@@ -284,15 +289,30 @@ If we add both equations we find that
 Substituting back into the first equation we find that
 <span class="math display">\[ 4+2y-8=0,\qquad\text{ and so }\quad y=2.\]</span>
 The stationary point is therefore at <span class="math inline">\((1,2)\)</span>.</p>
-<p>For surfaces <span class="math inline">\(z = f(x,y)\)</span> we can visualise the three possible types of stationary points. They are the <strong>local maximum</strong>, Figure <span class="math inline">\(\ref{local maximum}\)</span>, the <strong>local minimum</strong> Figure <span class="math inline">\(\ref{local minimum}\)</span>, and the <strong>local saddle</strong>, Figure <span class="math inline">\(\ref{local saddle}\)</span>.</p>
-<div class="figure">
-<img src="img/localmaximum3d.png" alt=""><p class="caption">Local maximum</p>
+<p>For surfaces <span class="math inline">\(z = f(x,y)\)</span> we can visualise the three possible types of stationary points. They are the <strong>local maximum</strong>, Figure <a href="optimisation.html#fig:localmaximum">4.2</a>, the <strong>local minimum</strong> Figure <a href="optimisation.html#fig:localminimum">4.3</a>, and the <strong>local saddle</strong>, Figure <a href="optimisation.html#fig:localsaddle">4.4</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:localmaximum"></span>
+<iframe src="https://www.wolframcloud.com/obj/adf4f415-4bc7-4088-afb4-941a39a22a3c" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 4.2: A local maximum
+</p>
 </div>
-<div class="figure">
-<img src="img/localminimum3d.png" alt=""><p class="caption">Local minimum</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:localminimum"></span>
+<iframe src="https://www.wolframcloud.com/obj/796ef6c9-cab2-4a8c-8b62-4a0964c1fc63" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 4.3: A local minimum
+</p>
 </div>
-<div class="figure">
-<img src="img/localsaddlepoint3d.png" alt=""><p class="caption">Local saddle</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:localsaddle"></span>
+<iframe src="https://www.wolframcloud.com/obj/5d6db314-5e5b-4cb8-8f7f-8a8805c1d9d8?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 4.4: A local saddle
+</p>
 </div>
 <p>It is possible to classify a stationary point using the second derivatives. Unfortunately this requires us to further restrict the generality of the problem since we have to assume that our functions have second order derivatives.</p>
 <p>Nevertheless we define the Hessian of the function <span class="math inline">\(f\)</span> as the matrix,
@@ -369,18 +389,23 @@ Then we follow the following decision tree.</p>
 <span class="header-section-number">4.10</span> Convex sets<a class="anchor" aria-label="anchor" href="#convex-sets"><i class="fas fa-link"></i></a>
 </h2>
 <p>A set <span class="math inline">\(S\)</span> is convex if the line joining any two points <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> in <span class="math inline">\(S\)</span> is entirely contained in <span class="math inline">\(S\)</span>.</p>
-<p>Figure <span class="math inline">\(\ref{convex sets}\)</span> shows an example of a convex set and a non-convex set.</p>
+<p>The Figure belwo shows an example of a convex set and a non-convex set.</p>
 <div class="figure">
-<img src="img/convexsets.png" alt=""><p class="caption">Convex sets</p>
+<img src="img/convexsets.png" style="width:100.0%" alt=""><p class="caption">Convex sets</p>
 </div>
 </div>
 <div id="convex-functions" class="section level2" number="4.11">
 <h2>
 <span class="header-section-number">4.11</span> Convex functions<a class="anchor" aria-label="anchor" href="#convex-functions"><i class="fas fa-link"></i></a>
 </h2>
-<p>A function is said to be a <strong>convex function</strong> if the region <strong>above</strong> its graph is a convex set. The archetype example is the function <span class="math inline">\(x\mapsto x^2\)</span>.</p>
-<div class="figure">
-<img src="img/convexfunctionexample1.png" alt=""><p class="caption">The graph of the convex function <span class="math inline">\(x^2\)</span></p>
+<p>A function is said to be a <strong>convex function</strong> if the region <strong>above</strong> its graph is a convex set. The archetype example is the function <span class="math inline">\(x\mapsto x^2\)</span> which is drawn in Figure <a href="optimisation.html#fig:convexfunction">4.5</a></p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:convexfunction"></span>
+<iframe src="https://www.desmos.com/calculator/geyl5dr3jx?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 4.5: The graph of the convex function <span class="math inline">\(x^2\)</span>
+</p>
 </div>
 <p>However the following functions are also convex:</p>
 <ul>
@@ -405,9 +430,14 @@ Then we follow the following decision tree.</p>
 <h2>
 <span class="header-section-number">4.12</span> Concave functions<a class="anchor" aria-label="anchor" href="#concave-functions"><i class="fas fa-link"></i></a>
 </h2>
-<p>In contrast to convex functions, a <strong>concave function</strong> is one where the region <strong>below</strong> its graph is a convex set. Again the archetype example is a quadraric, <span class="math inline">\(f(x) = -x^2\)</span>, whose graph is given in Figure <span class="math inline">\(\ref{concave example}\)</span>.</p>
-<div class="figure">
-<img src="img/concavefunctionexample1.png" alt=""><p class="caption">The graph of the concave function <span class="math inline">\(-x^2\)</span></p>
+<p>In contrast to convex functions, a <strong>concave function</strong> is one where the region <strong>below</strong> its graph is a convex set. Again the archetype example is a quadraric, <span class="math inline">\(f(x) = -x^2\)</span>, whose graph is given in Figure <a href="optimisation.html#fig:concavefunction">4.6</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:concavefunction"></span>
+<iframe src="https://www.desmos.com/calculator/62svx0pqcg?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 4.6: The graph of the concave function <span class="math inline">\(-x^2\)</span>
+</p>
 </div>
 <p>In general the following functions are concave:</p>
 <ul>
@@ -482,7 +512,7 @@ Then we follow the following decision tree.</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-11.</p>
+    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-12.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
