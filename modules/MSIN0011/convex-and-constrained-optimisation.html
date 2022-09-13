@@ -83,7 +83,7 @@
 <p>The algorithm thus updates <span class="math inline">\(\vec{x}_0\)</span> to give the next guess,
 <span class="math display">\[ \vec{x}_1 = \vec{x}_0 - \eta\nabla f(\vec{x}_0).\]</span></p>
 <div class="figure">
-<img src="img/GradientDescentExplanation.png" alt=""><p class="caption">The Gradient Descent Algorithm</p>
+<img src="img/GradientDescentExplanation.png" style="width:100.0%" alt=""><p class="caption">The Gradient Descent Algorithm</p>
 </div>
 <p>We continue in this way, producing better and better guesses. After a number of iterations we eventually reach the ‘bottom’ of the surface, i.e. approximately at the local minimum.</p>
 <p>Since we can’t always expect to exactly reach the stationary point, we normally just specify a level of precision <span class="math inline">\(\delta &gt; 0\)</span> that is acceptable. The algorithm is written like this.</p>
@@ -180,15 +180,25 @@ So we might model this problem as follows:
 <span class="header-section-number">5.5</span> Analysing contrained optimisation problems<a class="anchor" aria-label="anchor" href="#analysing-contrained-optimisation-problems"><i class="fas fa-link"></i></a>
 </h2>
 <p>We will develop a method for solving constrained optimisation problems called <strong>Lagrange Multipliers</strong> after the Italian mathematician Joseph-Louis Lagrange.</p>
-<div class="figure">
-<img src="img/constrainedexamplenotprojected.png" alt=""><p class="caption">Constrained optimisation</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:constrainedexamplenotprojected"></span>
+<iframe src="https://www.wolframcloud.com/obj/9a36ccd0-f8c5-4748-8bc4-e2fd749125d9" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 5.1: Constrained optimisation
+</p>
 </div>
-<p>In Figure <span class="math inline">\(\ref{constrained example not projected}\)</span> the surface <span class="math inline">\(z=f(x,y)\)</span> is drawn. The constraint, which we’ve written as
+<p>In Figure <a href="convex-and-constrained-optimisation.html#fig:constrainedexamplenotprojected">5.1</a> the surface <span class="math inline">\(z=f(x,y)\)</span> is drawn. The constraint, which we’ve written as
 <span class="math display">\[2x^2 - x y +y^2 = 10000\]</span>
 is the curve on the <span class="math inline">\(x-y\)</span> plane underneath the surface.</p>
-<p>So the problem is to find the maximum <span class="math inline">\(z\)</span> value on the surface ‘above’ the curve. Figure <span class="math inline">\(\ref{constrained example projected}\)</span> projects the curve directly upwards. We’re thus trying to find the largest <span class="math inline">\(z\)</span>-coordinate on the intersection of this projected curve and the surface.</p>
-<div class="figure">
-<img src="img/constrainedexampleprojected.png" alt=""><p class="caption">Constrained optimisation - the maximum value</p>
+<p>So the problem is to find the maximum <span class="math inline">\(z\)</span> value on the surface ‘above’ the curve. Figure <a href="convex-and-constrained-optimisation.html#fig:constrainedexampleprojected">5.2</a> projects the curve directly upwards. We’re thus trying to find the largest <span class="math inline">\(z\)</span>-coordinate on the intersection of this projected curve and the surface.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:constrainedexampleprojected"></span>
+<iframe src="https://www.wolframcloud.com/obj/533005c8-a349-4112-ba62-326a3b18b764" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 5.2: Constrained optimisation - the maximum value
+</p>
 </div>
 </div>
 <div id="lagrange-multipliers---an-explanation" class="section level2" number="5.6">
@@ -201,7 +211,7 @@ The green lines are the level curves
 <span class="math display">\[ f(x,y) = c\]</span>
 for <span class="math inline">\(c = 20000, 30000, 40000,\)</span> and <span class="math inline">\(50000\)</span>.</p>
 <div class="figure">
-<img src="img/LagrangeExplanation.png" alt=""><p class="caption">The contour plot and constraint curve</p>
+<img src="img/LagrangeExplanation.png" style="width:100.0%" alt=""><p class="caption">The contour plot and constraint curve</p>
 </div>
 <p>The key concept to notice is that at the level curve that represents the maximum is the one that is tangent to the constraint curve.</p>
 <p>Suppose the optimal point is <span class="math inline">\((x_m, y_m)\)</span>. Then we learned in Week 3 that the gradient <span class="math inline">\(\nabla f(x_m,y_m)\)</span> is a vector perpendicular to the level curve.</p>
@@ -369,7 +379,7 @@ Then the generalised method of Lagrange multipliers finds the stationary points 
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-12.</p>
+    <p>"<strong>MSIN0011 Calculus and Modelling</strong>" was written by Matthew M. Jones. It was last built on 2022-09-13.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
