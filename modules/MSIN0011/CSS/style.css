@@ -3,12 +3,32 @@
 
 h1,h2,h3 {
   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
   font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 300;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+}
+
+img#cover {
+    margin-right: 1.5rem;
+    width: 100%;
+}
+
+.logo-title-box {
+  display: grid;
 }
 
 p.caption {
