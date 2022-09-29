@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Topic 1 Differentiation Revision | MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material</title>
+<meta name="author" content="Matthew M. Jones">
+<meta name="description" content="1.1 Understanding the derivative The derivative of a function \(f(x)\) is the gradient of the tangent to its graph at the point \((x,f(x))\). Figure @ref(gradient plot) illustrates this and we...">
+<meta name="generator" content="bookdown 0.28 with bs4_book()">
+<meta property="og:title" content="Topic 1 Differentiation Revision | MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material">
+<meta property="og:type" content="book">
+<meta property="og:description" content="1.1 Understanding the derivative The derivative of a function \(f(x)\) is the gradient of the tangent to its graph at the point \((x,f(x))\). Figure @ref(gradient plot) illustrates this and we...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Topic 1 Differentiation Revision | MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material">
+<meta name="twitter:description" content="1.1 Understanding the derivative The derivative of a function \(f(x)\) is the gradient of the tangent to its graph at the point \((x,f(x))\). Figure @ref(gradient plot) illustrates this and we...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <div class="logo-title-box">
+      <img id="cover" class="d-none d-lg-block" src="img/ucl_logo.png"><h1>
+        <a href="index.html" title="">MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material</a>
+      </h1>
+      </div>
+      
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Introduction</a></li>
+<li><a class="active" href="differentiation-revision.html"><span class="header-section-number">1</span> Differentiation Revision</a></li>
+<li><a class="" href="differentiation-practice-problems.html"><span class="header-section-number">2</span> Differentiation Practice Problems</a></li>
+<li><a class="" href="integration.html"><span class="header-section-number">3</span> Integration</a></li>
+<li><a class="" href="integration-practice-problems.html"><span class="header-section-number">4</span> Integration Practice Problems</a></li>
+<li><a class="" href="solutions-to-the-practice-problems.html"><span class="header-section-number">5</span> Solutions to the practice problems</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="differentiation-revision" class="section level1" number="1">
+<h1>
+<span class="header-section-number">Topic 1</span> Differentiation Revision<a class="anchor" aria-label="anchor" href="#differentiation-revision"><i class="fas fa-link"></i></a>
+</h1>
+<div id="understanding-the-derivative" class="section level2" number="1.1">
+<h2>
+<span class="header-section-number">1.1</span> Understanding the derivative<a class="anchor" aria-label="anchor" href="#understanding-the-derivative"><i class="fas fa-link"></i></a>
+</h2>
+<p>The derivative of a function <span class="math inline">\(f(x)\)</span> is the gradient of the tangent to its graph at the point <span class="math inline">\((x,f(x))\)</span>. Figure @ref(gradient plot) illustrates this and we will look in detail at this when we learn about differentiable functions in Week 2.</p>
+</div>
+<div id="the-gradient" class="section level2" number="1.2">
+<h2>
+<span class="header-section-number">1.2</span> The gradient<a class="anchor" aria-label="anchor" href="#the-gradient"><i class="fas fa-link"></i></a>
+</h2>
+<p>The gradient is a number that measure how quickly a function <span class="math inline">\(f(x)\)</span> changes per unit increase in <span class="math inline">\(x\)</span>. For a straight line this is straightforward.</p>
+<p>Let <span class="math inline">\(f(x) = mx + c\)</span> for some numbers <span class="math inline">\(m,c\in\mathbb{R}\)</span>. When <span class="math inline">\(x\)</span> increases to from <span class="math inline">\(1\)</span> to <span class="math inline">\(2\)</span>, say, the function <span class="math inline">\(f\)</span> increases from <span class="math inline">\(m + c\)</span> to <span class="math inline">\(2m + c\)</span>.
+In other words when we increase <span class="math inline">\(x\)</span> by <span class="math inline">\(1\)</span> the function increases by
+<span class="math display">\[ (2m + c) - (m + c) = m. \]</span>
+The value of <span class="math inline">\(m\)</span> represents the amount the function changes when <span class="math inline">\(x\)</span> increases by <span class="math inline">\(1\)</span>.</p>
+<ul>
+<li>When <span class="math inline">\(m &gt; 0\)</span> the function <span class="math inline">\(f(x)\)</span> is <strong>strictly increasing</strong>
+</li>
+<li>When <span class="math inline">\(m &lt; 0\)</span> the function <span class="math inline">\(f(x)\)</span> is <strong>strictly decreasing</strong>
+</li>
+<li>When <span class="math inline">\(m=0\)</span> the function <span class="math inline">\(f(x)\)</span> is <strong>constant</strong>
+</li>
+</ul>
+<p>For this example the gradient doesn’t change if <span class="math inline">\(x\)</span> does. This is not true in general.</p>
+<p>The <strong>derivative</strong> measures the <strong>instantaneous gradient</strong>, meaning the gradient at that particular point. Of course the gradient can change when <span class="math inline">\(x\)</span> does, but the characterisation above is the same (except you have to be careful when you say that a function is constant as we will see in Week 1).</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:tangent"></span>
+<iframe src="https://www.desmos.com/calculator/ctz9iyi6io?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 1.1: The graph of <span class="math inline">\(f(x)\)</span> and its tangent at <span class="math inline">\((x,f(x))\)</span>
+</p>
+</div>
+</div>
+<div id="calculating-derivatives" class="section level2" number="1.3">
+<h2>
+<span class="header-section-number">1.3</span> Calculating derivatives<a class="anchor" aria-label="anchor" href="#calculating-derivatives"><i class="fas fa-link"></i></a>
+</h2>
+<p>The derivatives of some standard functions are given as fixed formulas, for example if <span class="math inline">\(f(x) = x^n\)</span> then its derivative is <span class="math inline">\(f'(x) = nx^{n-1}\)</span>. There are a number of other such rules that you can find on the following <a href="https://www.mathcentre.ac.uk/resources/uploaded/maths-centre-ff-printable.pdf">formula sheet</a>. You can print this out on an A3 piece of paper and fold it (there is also a copy on Moodle).</p>
+</div>
+<div id="rules-for-differentiating" class="section level2" number="1.4">
+<h2>
+<span class="header-section-number">1.4</span> Rules for differentiating<a class="anchor" aria-label="anchor" href="#rules-for-differentiating"><i class="fas fa-link"></i></a>
+</h2>
+<p>There are also <strong>rules</strong> for differentiation that help you find more complicated derivatives. First we note that the derivative of a linear combination of functions, such as
+<span class="math display">\[af(x) + bg(x),\]</span>
+is given by
+<span class="math display">\[ a f'(x) + b g'(x).\]</span></p>
+<div id="example" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example"><i class="fas fa-link"></i></a>
+</h3>
+<p>The derivative of <span class="math inline">\(x^2 + 2x + 1\)</span> is
+<span class="math display">\[2x+2 \]</span></p>
+</div>
+</div>
+<div id="the-chain-rule" class="section level2" number="1.5">
+<h2>
+<span class="header-section-number">1.5</span> The chain rule<a class="anchor" aria-label="anchor" href="#the-chain-rule"><i class="fas fa-link"></i></a>
+</h2>
+<p>If a function <span class="math inline">\(f\)</span> can be written as the composition of two other function <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span>,
+<span class="math display">\[ f = g\circ h\]</span>
+then we may calculate the derivative using the <strong>chain rule</strong>:
+<span class="math display">\[ f'(x) = h'(x)\, g'(h(x)).\]</span></p>
+<div id="example-1" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the derivative of <span class="math inline">\(f(x) = \log (\cos x)\)</span>.</p>
+<p>Here <span class="math inline">\(g(x) = \log x\)</span> so that <span class="math inline">\(g'(x) = 1/x\)</span>, and <span class="math inline">\(h(x) = \cos x\)</span> so that <span class="math inline">\(h'(x) = -\sin x\)</span>.
+<span class="math display">\[ f'(x) = -\sin x \dfrac{1}{\cos x} = - \tan x,\]</span>
+since <span class="math inline">\(\tan x = \sin x / \cos x\)</span>.</p>
+</div>
+</div>
+<div id="the-product-rule" class="section level2" number="1.6">
+<h2>
+<span class="header-section-number">1.6</span> The product rule<a class="anchor" aria-label="anchor" href="#the-product-rule"><i class="fas fa-link"></i></a>
+</h2>
+<p>If a function <span class="math inline">\(f\)</span> can be written as a product of two other functions <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span>,
+<span class="math display">\[ f = g h\]</span>
+then we may calculate the derivative using the <strong>product rule</strong>:
+<span class="math display">\[ f'(x) = g'(x) h(x) + g(x) h'(x).\]</span></p>
+<div id="example-2" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-2"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the derivative of <span class="math inline">\(f(x) = x^2 \cos x\)</span>.</p>
+<p>Here we let <span class="math inline">\(g(x) = x^2\)</span> and <span class="math inline">\(h(x) = \cos x\)</span> so that
+<span class="math display">\[ f'(x) = 2x \cos x + x^2 (-\sin x) = x(2\cos x - x\sin x).\]</span></p>
+</div>
+<div id="example-3" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-3"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the derivative of <span class="math inline">\(f(x) = e^x \sin 5x\)</span>.</p>
+<p>Here we let <span class="math inline">\(g(x) = e^x\)</span> and <span class="math inline">\(h(x) = \sin 5x\)</span>.</p>
+<p>Now <span class="math inline">\(g'(x) = e^x\)</span> and we can calculate, using the chain rule, that <span class="math inline">\(h'(x) = 5\cos 5x\)</span>. So
+<span class="math display">\[ f'(x) = e^x \sin 5x + e^x (5\cos 5x) = e^x (\sin 5x + 5\cos 5x).\]</span></p>
+</div>
+</div>
+<div id="the-quotient-rule" class="section level2" number="1.7">
+<h2>
+<span class="header-section-number">1.7</span> The quotient rule<a class="anchor" aria-label="anchor" href="#the-quotient-rule"><i class="fas fa-link"></i></a>
+</h2>
+<p>If a function <span class="math inline">\(f\)</span> can be written as a quotient of two other functions <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span>,
+<span class="math display">\[ f = \frac{g}h\]</span>
+then we may calculate the derivative using the <strong>quotient rule</strong>:
+<span class="math display">\[ f'(x) = \dfrac{g'(x) h(x) - g(x) h'(x)}{h(x)^2}. \]</span></p>
+<div id="example-4" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-4"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the derivative of <span class="math inline">\(f(x) = \dfrac{e^x}{\cos x}\)</span>.</p>
+<p>Here <span class="math inline">\(g(x) = e^x\)</span>, so that <span class="math inline">\(g'(x) = e^x\)</span>, and <span class="math inline">\(h(x) = \cos x\)</span> so that <span class="math inline">\(h'(x) = -\sin x\)</span>.
+<span class="math display">\[ f'(x) = \dfrac{e^x \cos x - e^x (-\sin x)}{(\cos x)^2} = e^x \dfrac{\cos x + \sin x}{\cos^2 x} = e^x(1 + \tan x)\sec x.\]</span></p>
+</div>
+<div id="example-5" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-5"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the derivative of <span class="math inline">\(f(x) = \dfrac{x^2 \cos 2x}{\sin^2 x}\)</span>.</p>
+<p>Let <span class="math inline">\(g(x) = x^2 \cos 2x\)</span>. Using the product rule and the chain rule we have that
+<span class="math display">\[ g'(x) = 2x \cos 2x + x^2 (-2\sin 2x) = 2x(\cos 2x - x\sin 2x)\]</span>
+Let <span class="math inline">\(h(x) = \sin^2 x\)</span>. using the chain rule we have that
+<span class="math display">\[ h'(x) = 2\sin x \cos x = \sin 2x. \]</span>
+Therefore,
+<span class="math display">\[
+\begin{aligned}
+f'(x)   &amp;= \dfrac{2x(\cos 2x - x\sin 2x) \sin^2 x - x^2\cos 2x (\sin 2x)}{\sin^4 x}\\
+        &amp;= \dfrac{2x\cos 2x\sin^2 x - 2x^2\sin 2x\sin^2 x - x^2 \cos2x \sin 2x}{\sin^4 x}
+\end{aligned}
+\]</span></p>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="index.html">Introduction</a></div>
+<div class="next"><a href="differentiation-practice-problems.html"><span class="header-section-number">2</span> Differentiation Practice Problems</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#differentiation-revision"><span class="header-section-number">1</span> Differentiation Revision</a></li>
+<li><a class="nav-link" href="#understanding-the-derivative"><span class="header-section-number">1.1</span> Understanding the derivative</a></li>
+<li><a class="nav-link" href="#the-gradient"><span class="header-section-number">1.2</span> The gradient</a></li>
+<li><a class="nav-link" href="#calculating-derivatives"><span class="header-section-number">1.3</span> Calculating derivatives</a></li>
+<li>
+<a class="nav-link" href="#rules-for-differentiating"><span class="header-section-number">1.4</span> Rules for differentiating</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#example">Example</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#the-chain-rule"><span class="header-section-number">1.5</span> The chain rule</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#example-1">Example</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#the-product-rule"><span class="header-section-number">1.6</span> The product rule</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-2">Example</a></li>
+<li><a class="nav-link" href="#example-3">Example</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#the-quotient-rule"><span class="header-section-number">1.7</span> The quotient rule</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-4">Example</a></li>
+<li><a class="nav-link" href="#example-5">Example</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material</strong>" was written by Matthew M. Jones. It was last built on 2022-09-29.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

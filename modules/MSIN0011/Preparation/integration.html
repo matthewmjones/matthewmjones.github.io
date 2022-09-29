@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Topic 3 Integration | MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material</title>
+<meta name="author" content="Matthew M. Jones">
+<meta name="description" content="3.1 Understanding the integral Let \(f\) be a function and suppose for the moment that \(f(x) \ge 0\) for all \(x\). The integral of \(f\) between to numbers \(a\) and \(b\) with \(a &lt; b\) is the...">
+<meta name="generator" content="bookdown 0.28 with bs4_book()">
+<meta property="og:title" content="Topic 3 Integration | MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material">
+<meta property="og:type" content="book">
+<meta property="og:description" content="3.1 Understanding the integral Let \(f\) be a function and suppose for the moment that \(f(x) \ge 0\) for all \(x\). The integral of \(f\) between to numbers \(a\) and \(b\) with \(a &lt; b\) is the...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Topic 3 Integration | MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material">
+<meta name="twitter:description" content="3.1 Understanding the integral Let \(f\) be a function and suppose for the moment that \(f(x) \ge 0\) for all \(x\). The integral of \(f\) between to numbers \(a\) and \(b\) with \(a &lt; b\) is the...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <div class="logo-title-box">
+      <img id="cover" class="d-none d-lg-block" src="img/ucl_logo.png"><h1>
+        <a href="index.html" title="">MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material</a>
+      </h1>
+      </div>
+      
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Introduction</a></li>
+<li><a class="" href="differentiation-revision.html"><span class="header-section-number">1</span> Differentiation Revision</a></li>
+<li><a class="" href="differentiation-practice-problems.html"><span class="header-section-number">2</span> Differentiation Practice Problems</a></li>
+<li><a class="active" href="integration.html"><span class="header-section-number">3</span> Integration</a></li>
+<li><a class="" href="integration-practice-problems.html"><span class="header-section-number">4</span> Integration Practice Problems</a></li>
+<li><a class="" href="solutions-to-the-practice-problems.html"><span class="header-section-number">5</span> Solutions to the practice problems</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="integration" class="section level1" number="3">
+<h1>
+<span class="header-section-number">Topic 3</span> Integration<a class="anchor" aria-label="anchor" href="#integration"><i class="fas fa-link"></i></a>
+</h1>
+<div id="understanding-the-integral" class="section level2" number="3.1">
+<h2>
+<span class="header-section-number">3.1</span> Understanding the integral<a class="anchor" aria-label="anchor" href="#understanding-the-integral"><i class="fas fa-link"></i></a>
+</h2>
+<p>Let <span class="math inline">\(f\)</span> be a function and suppose for the moment that <span class="math inline">\(f(x) \ge 0\)</span> for all <span class="math inline">\(x\)</span>. The integral of <span class="math inline">\(f\)</span> between to numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> with <span class="math inline">\(a &lt; b\)</span> is the <strong>area</strong> between the graph <span class="math inline">\(G_f\)</span> and the <span class="math inline">\(x\)</span>-axis from <span class="math inline">\(x=a\)</span> up to <span class="math inline">\(x=b\)</span>. It is written as
+<span class="math display">\[ \int_a^b f(x) \mathrm{d}x.\]</span></p>
+<p>The fundamental theorem of calculus gives us an easy way to find this area. We’ll prove this at the end of the year, but for now we’ll just write it informally.</p>
+<p>If <span class="math inline">\(F\)</span> is a function such that <span class="math inline">\(f(x) = F'(x)\)</span> then
+<span class="math display">\[ \int_a^b f(x) \mathrm{d}x = F(b) - F(a).\]</span>
+The function <span class="math inline">\(F\)</span> is called the of <span class="math inline">\(f\)</span>, or sometimes the <strong>anti-derivative</strong>. It is also often written as
+<span class="math display">\[ \int f(x)\mathrm{d}x,\]</span>
+that is, as an integral without the limits of integration.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:tangent"></span>
+<iframe src="https://www.desmos.com/calculator/jcf07btmyw?embed" width="100%" height="400px" data-external="1">
+</iframe>
+<p class="caption">
+Figure 1.1: The integral of a function between <span class="math inline">\(x=a\)</span> and <span class="math inline">\(x=b\)</span>
+</p>
+</div>
+<div id="example-6" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-6"><i class="fas fa-link"></i></a>
+</h3>
+<p>Calculate:
+<span class="math display">\[ \int_0^2 2x \;\mathrm{d}x. \]</span>
+Here we may take <span class="math inline">\(F(x) = x^2\)</span>. Then <span class="math inline">\(F'(x) = 2x = f(x)\)</span> and we have
+<span class="math display">\[ \int_0^2 2x \;\mathrm{d}x = \left[ x^2 \right]_0^2 = 4. \]</span></p>
+<p>Because we are interested in finding anti-derivatives, integration is often seen as the opposite operation to differentiation. For this reason a great deal of effort is put into finding anti-derivatives. In the <a href="https://www.mathcentre.ac.uk/resources/uploaded/maths-centre-ff-printable.pdf">formula sheet</a> you downloaded previously there are a number of standard anti-derivatives.</p>
+<p>There are also rules of integration equivalent to the product and chain rules of differentiation.</p>
+</div>
+</div>
+<div id="integration-by-substitution" class="section level2" number="3.2">
+<h2>
+<span class="header-section-number">3.2</span> Integration by substitution<a class="anchor" aria-label="anchor" href="#integration-by-substitution"><i class="fas fa-link"></i></a>
+</h2>
+<p>The opposite operation to the chain rule is <strong>integration by substitution</strong>. This is more of an art than a science since you need to know what substitution to make.</p>
+<div id="example-7" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-7"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the indefinite integral
+<span class="math display">\[ \int x^2(x^3 - 3)^5\mathrm{d}x.\]</span>
+Here we could expand this bracket and multiply each term by <span class="math inline">\(x^2\)</span>. But a better method would be to notice that the derivative of <span class="math inline">\((x^3 - 3)\)</span> is <span class="math inline">\(3x^2\)</span> which is a multiple of <span class="math inline">\(x^2\)</span>. So we would expect the indefinite integral to be of the form <span class="math inline">\(k(x^3 - 3)^6\)</span>. If we differentiate this we get
+<span class="math display">\[ 18kx^2 (x^3 - 3)^5, \]</span>
+so that we must have <span class="math inline">\(k=1/18\)</span>. Hence
+<span class="math display">\[ \int x^2(x^3 - 3)^5\mathrm{d}x = \dfrac{1}{18} (x^3 - 3)^6 + c.\]</span></p>
+<p>You don’t always see this composition so a more general method needs to be used.</p>
+<p>Let <span class="math inline">\(F(x) = \int f(x)\mathrm{d}x\)</span> so that <span class="math inline">\(F'(x) = f(x)\)</span>. Suppose the variable <span class="math inline">\(x\)</span> is itself a function of another variable <span class="math inline">\(u\)</span>, <span class="math inline">\(x = g(u)\)</span>. This means
+<span class="math display">\[ f(x) = f(g(u)). \]</span>
+This is a function of the new variable <span class="math inline">\(u\)</span> so we can use the chain rule to find
+<span class="math display">\[ f'(u) = g'(u)\, f'(g(u)) = g'(u) f'(x).\]</span>
+This may seem a little cyclic but the point is that we can write
+<span class="math display">\[ f'(x) = \dfrac{f'(u)}{g'(u)}.\]</span>
+Writing <span class="math inline">\(g'(u) = \dfrac{\mathrm{d}x}{\mathrm{d}u}\)</span> this means we have the easier to remember formula
+<span class="math display">\[ \int f(x)\mathrm{d}x = \int f(g(u)) \dfrac{\mathrm{d}x}{\mathrm{d}u} \mathrm{d}u.\]</span></p>
+</div>
+<div id="example-8" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-8"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the indefinite integral
+<span class="math display">\[ \int x^2(x^3 - 3)^5\mathrm{d}x.\]</span>
+This time we will answer this question using the substitution <span class="math inline">\(u = x^3 - 3\)</span>. Now <span class="math inline">\(\dfrac{\mathrm{d}u}{\mathrm{d}x} = 3x^2\)</span> and so <span class="math inline">\(\dfrac{\mathrm{d}x}{\mathrm{d}u} = \dfrac{1}{3x^2}\)</span>. So
+<span class="math display">\[
+\begin{aligned}
+    \int x^2(x^3 - 3)^5\mathrm{d}x  &amp;= \int x^2 u^5 \dfrac{1}{3x^2} \mathrm{d}u\\
+                                    &amp;= \int \dfrac{u^5}3 \mathrm{d}u\\
+                                    &amp;= \dfrac{u^6}{18} + c\\
+                                    &amp;= \dfrac{1}{18} (x^3 - 3)^6 + c
+\end{aligned}
+\]</span>
+which is what we found before.</p>
+<p>Note in some examples we make the substitution <span class="math inline">\(u = G(x)\)</span> instead of <span class="math inline">\(x = g(u)\)</span>. Then we can use the fact that as long as <span class="math inline">\(\dfrac{\mathrm{d}u}{\mathrm{d}x} \neq 0\)</span>,
+<span class="math display">\[ \dfrac{\mathrm{d}x}{\mathrm{d}u} = \dfrac{1}{\dfrac{\mathrm{d}u}{\mathrm{d}x}}.\]</span>
+Note in some examples we make the substitution <span class="math inline">\(u = G(x)\)</span> instead of <span class="math inline">\(x = g(u)\)</span>. Then we can use the fact that as long as <span class="math inline">\(\dfrac{\mathrm{d}u}{\mathrm{d}x} \neq 0\)</span>,
+<span class="math display">\[ \dfrac{\mathrm{d}x}{\mathrm{d}u} = \dfrac{1}{\dfrac{\mathrm{d}u}{\mathrm{d}x}}.\]</span>
+Note: this is a gross simplification of something called the <strong>inverse mapping theorem</strong> but it will do for now.</p>
+</div>
+<div id="example-9" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-9"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find the indefinite integral
+<span class="math display">\[ \int \sin \frac{x}3 \mathrm{d}x.\]</span>
+This time we let <span class="math inline">\(u = \dfrac{x}3\)</span> so that <span class="math inline">\(\dfrac{\mathrm{d}u}{\mathrm{d}x} = \dfrac{1}3\)</span>. Therefore
+<span class="math display">\[
+\begin{aligned}
+\int \sin \frac{x}3 \mathrm{d}x       &amp;= \int (\sin u) 3 \mathrm{d}u\\
+                                      &amp;= -3\cos u + c \\
+                                      &amp;= -3 \cos \dfrac{x}3 + c
+\end{aligned}
+\]</span></p>
+<p>Suppose now we want to integrate a function
+<span class="math display">\[ \int_a^b f(x) \mathrm{d}x\]</span>
+using a suitable substitution <span class="math inline">\(x = g(u)\)</span>. How should we go about this? First we have that <span class="math inline">\(x = g(u)\)</span> is injective — i.e. it is a one-to-one mapping. That way we can find values of <span class="math inline">\(u\)</span> so that
+<span class="math display">\[a = g(A), \qquad b= g(B).\]</span>
+Note this just means <span class="math inline">\(A = g^{-1}(a)\)</span> and <span class="math inline">\(B = g^{-1}(b)\)</span>. Then
+<span class="math display">\[ \int_a^b f(x)\mathrm{d}x = \int_A^B f(g(u)) \dfrac{\mathrm{d}x}{\mathrm{d}u} \mathrm{d}u.\]</span></p>
+</div>
+<div id="example-10" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-10"><i class="fas fa-link"></i></a>
+</h3>
+<p>Calculate the integral
+<span class="math display">\[ \int_0^1 \sqrt{1-x^2} \mathrm{d}x.\]</span>
+For integrals like this we can use the substitution <span class="math inline">\(x = \sin u\)</span>. Then <span class="math inline">\(\dfrac{\mathrm{d}x}{\mathrm{d}u} = \cos u\)</span>. Now when <span class="math inline">\(x = 0\)</span>, <span class="math inline">\(u = 0\)</span> and when <span class="math inline">\(x=1\)</span>, <span class="math inline">\(u=\pi/2\)</span>. So
+<span class="math display">\[
+\begin{aligned}
+\int_0^1 \sqrt{1-x^2} \mathrm{d}x   &amp;= \int_0^{\pi/2} \sqrt{1-\sin^2 u} \cos u \mathrm{d}u\\
+                                        &amp;= \int_0^{\pi/2} \sqrt{\cos^2 u} \cos u \mathrm{d}u\\
+                                        &amp;= \int_0^{\pi/2} \cos^2 u \mathrm{d}u\\
+                                        &amp;= \int_0^{\pi/2} \frac{1}2(\cos 2u + 1) \mathrm{d}u\\
+                                        &amp;= \left[ \dfrac{1}2 (\frac{1}2 \sin 2u + u) \right]_0^{\pi/2}\\
+                                        &amp;= \dfrac{\pi}4.
+\end{aligned}
+\]</span></p>
+</div>
+</div>
+<div id="integration-by-parts" class="section level2" number="3.3">
+<h2>
+<span class="header-section-number">3.3</span> Integration by parts<a class="anchor" aria-label="anchor" href="#integration-by-parts"><i class="fas fa-link"></i></a>
+</h2>
+<p>Suppose <span class="math inline">\(F(x)\)</span> is the indefinite integral of <span class="math inline">\(f\)</span>, i.e. <span class="math inline">\(F'(x) = f(x)\)</span>. The product rule for differentiation said that if <span class="math inline">\(F = gh\)</span> then
+<span class="math display">\[ F'(x) = g'(x)h(x) + g(x)h'(x).\]</span>
+This means that to find <span class="math inline">\(F(x)\)</span> we can integrate the right-hand side of this.
+<span class="math display">\[ F(x) = \int f(x) \mathrm{d}x = \int g'(x)h(x)\mathrm{d}x + \int g(x)h'(x)\mathrm{d}x.\]</span>
+This gives us another useful method for finding indefinite integrals called integration by parts. We normally write this a
+<span class="math display">\[ \int g'(x) h(x) \mathrm{d}x = g(x) h(x) - \int g(x)h'(x)\mathrm{d}x. \]</span>
+This method is useful when we want to integrate a product.</p>
+<div id="example-11" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-11"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find
+<span class="math display">\[ \int x e^{x} \mathrm{d}x.\]</span>
+We write <span class="math inline">\(g'(x) = e^x\)</span> here, and <span class="math inline">\(h(x) = x\)</span>. Then
+<span class="math display">\[ g(x) = e^x, \qquad h'(x) = 1.\]</span>
+Therefore
+<span class="math display">\[
+\begin{aligned}
+\int g'(x) h(x) \mathrm{d}x &amp;= \int x e^{x} \mathrm{d}x \\ &amp;= xe^x - \int e^x \mathrm{d}x\\ &amp;= xe^x - e^x + c = (x-1)e^x + c
+\end{aligned}
+\]</span></p>
+</div>
+<div id="example-12" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-12"><i class="fas fa-link"></i></a>
+</h3>
+<p>Calculate
+<span class="math display">\[ \int_0^{\pi/2} x \cos x \mathrm{d}x. \]</span>
+Here we let <span class="math inline">\(g'(x) = \cos x\)</span> and <span class="math inline">\(h(x) = x\)</span>. Then
+<span class="math display">\[ g(x) = \sin x,\qquad h'(x) = 1.\]</span>
+We can therefore calculate the indefinite integral
+<span class="math display">\[ \int x \cos x \mathrm{d}x = x\sin x - \int \sin x \mathrm{d}x = x\sin x + \cos x + c.\]</span>
+Hence</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_0^{\pi/2} x \cos x \mathrm{d}x &amp;= \left[ x\sin x + \cos x\right]_0^{\pi/2}\\ &amp;= \left(\frac{\pi}2 + 0\right) - \left(0 + 1\right)\\ &amp;= \frac{\pi}2 - 1.
+\end{aligned}
+\]</span></p>
+</div>
+</div>
+<div id="pattern-recognition" class="section level2" number="3.4">
+<h2>
+<span class="header-section-number">3.4</span> Pattern recognition<a class="anchor" aria-label="anchor" href="#pattern-recognition"><i class="fas fa-link"></i></a>
+</h2>
+<p>The more practice you have doing integration the better you will become. In addition to the techniques above there are often patterns that come up a lot. For example we have the <strong>logarithmic integral</strong>:
+<span class="math display">\[ \int \frac{f'(x)}{f(x)} \mathrm{d} x = \log |f(x)| + c\]</span></p>
+<div id="example-13" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-13"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find <span class="math inline">\(\displaystyle \int \frac{x}{1+x^2} \mathrm{d}x\)</span>.</p>
+<p>Here we let <span class="math inline">\(f(x) = 1 + x^2\)</span>. Then <span class="math inline">\(f'(x) = 2x\)</span> and we have
+<span class="math display">\[ \int \frac{x}{1+x^2} \mathrm{d}x = \frac{1}2\int \frac{2x}{1+x^2} \mathrm{d}x = \frac{1}2 \log |1 + x^2| + c.\]</span>
+Note: <span class="math inline">\(1 + x^2 &gt; 0\)</span> for all <span class="math inline">\(x\)</span> so we can remove the absolute value sign here.
+<span class="math display">\[ \int \frac{x}{1+x^2} \mathrm{d}x = \frac{1}2 \log (1 + x^2) + c\]</span></p>
+</div>
+<div id="example-14" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-14"><i class="fas fa-link"></i></a>
+</h3>
+<p>Find <span class="math inline">\(\displaystyle \int \tan x \mathrm{d}x\)</span>.</p>
+<p>Here we write <span class="math inline">\(\displaystyle \tan x = \frac{\sin x}{\cos x}\)</span>. Then
+<span class="math display">\[ \int \tan x \mathrm{d}x = \int \frac{\sin x}{\cos x}\mathrm{d}x = -\log |\cos x| + c. \]</span>
+Since <span class="math inline">\(\sec x = 1/\cos x\)</span> we can write this as
+<span class="math display">\[ \int \tan x \mathrm{d}x = \log |\sec x| + c.\]</span></p>
+<p>Other techniques that you will have learned include:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Partial fractions</strong></li>
+<li><strong>Polynomial long-division</strong></li>
+<li>
+<strong>Trigonometric identities</strong>. These include the <strong>double angle formulas</strong>, the *half angle formulas** as well as Pythagoras’ identity,
+<span class="math display">\[ \sin^2 x + \cos^2 x = 1.\]</span>
+</li>
+</ol>
+</div>
+</div>
+<div id="areas-under-a-curve" class="section level2" number="3.5">
+<h2>
+<span class="header-section-number">3.5</span> Areas under a curve<a class="anchor" aria-label="anchor" href="#areas-under-a-curve"><i class="fas fa-link"></i></a>
+</h2>
+<p>The integral of <span class="math inline">\(f\)</span> measures the area between the graph of a curve, <span class="math inline">\(G_f\)</span>, and the <span class="math inline">\(x\)</span>-axis only if <span class="math inline">\(f(x)\ge 0\)</span> for all <span class="math inline">\(x\)</span>. If <span class="math inline">\(f(x) &lt; 0\)</span> at any point then the integral gives the negative value of the area.</p>
+<div id="example-15" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-15"><i class="fas fa-link"></i></a>
+</h3>
+<p>Calculate the integral
+<span class="math display">\[ \int_{-1}^1 x^2 - 1 \mathrm{d}x.\]</span>
+The answer is <span class="math inline">\(-4/3\)</span> (Check that). This is negative because the graph of this curve is <strong>beneath</strong> the <span class="math inline">\(x\)</span>-axis.</p>
+<p>This phenomenon can lead to cancelling out in integrals.</p>
+</div>
+<div id="example-16" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-16"><i class="fas fa-link"></i></a>
+</h3>
+<p>Calculate the integral
+<span class="math display">\[ \int_0^{2\pi} \sin x \mathrm{d}x.\]</span>
+This time we have
+<span class="math display">\[ \int_0^{2\pi} \sin x \mathrm{d}x = \left[ -\cos x\right]_0^{2\pi} = 0 - 0 = 0.\]</span>
+The graph consists of pieces above the <span class="math inline">\(x\)</span>-axis and pieces below, their areas cancel out.</p>
+<p>An odd function is any function that satisfies
+<span class="math display">\[ f(-x) = -f(x). \]</span></p>
+</div>
+<div id="example-17" class="section level3 unnumbered">
+<h3>Example<a class="anchor" aria-label="anchor" href="#example-17"><i class="fas fa-link"></i></a>
+</h3>
+<p>Suppose <span class="math inline">\(f\)</span> is an odd function. Then
+<span class="math display">\[ \int_{-A}^A f(x) \mathrm{d}x = 0,\]</span>
+for any <span class="math inline">\(A &gt; 0\)</span>.</p>
+<p>This is true because odd functions are rotationally symmetric by <span class="math inline">\(\pi\)</span> radians around the origin. This means the graph for <span class="math inline">\(x&lt;0\)</span> is the same as the graph for <span class="math inline">\(x&gt;0\)</span> except that it is <strong>beneath</strong> the <span class="math inline">\(y\)</span>-axis.</p>
+<p>We can prove this more rigorously as follows. Making the substitution <span class="math inline">\(u = -x\)</span>,
+<span class="math display">\[\begin{aligned}
+    \int_{-A}^0 f(x) \mathrm{d}x &amp;= \int_{A}^0 -f(-u) \mathrm{d}u \\
+                                 &amp;= \int_A^0 f(u) \mathrm{d}u = - \int_0^A f(u) \mathrm{d}u\\
+                                 &amp;= - \int_0^A f(x) \mathrm{d}x
+\end{aligned}
+\]</span>
+So,
+<span class="math display">\[ \int_{-A}^A f(x) \mathrm{d}x = \int_{-A}^0 f(x) \mathrm{d}x + \int_{0}^A f(x) \mathrm{d}x = -\int_0^A f(x) \mathrm{d}x + \int_0^A f(x) \mathrm{d}x = 0.\]</span></p>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="differentiation-practice-problems.html"><span class="header-section-number">2</span> Differentiation Practice Problems</a></div>
+<div class="next"><a href="integration-practice-problems.html"><span class="header-section-number">4</span> Integration Practice Problems</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#integration"><span class="header-section-number">3</span> Integration</a></li>
+<li>
+<a class="nav-link" href="#understanding-the-integral"><span class="header-section-number">3.1</span> Understanding the integral</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#example-6">Example</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#integration-by-substitution"><span class="header-section-number">3.2</span> Integration by substitution</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-7">Example</a></li>
+<li><a class="nav-link" href="#example-8">Example</a></li>
+<li><a class="nav-link" href="#example-9">Example</a></li>
+<li><a class="nav-link" href="#example-10">Example</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#integration-by-parts"><span class="header-section-number">3.3</span> Integration by parts</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-11">Example</a></li>
+<li><a class="nav-link" href="#example-12">Example</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#pattern-recognition"><span class="header-section-number">3.4</span> Pattern recognition</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-13">Example</a></li>
+<li><a class="nav-link" href="#example-14">Example</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#areas-under-a-curve"><span class="header-section-number">3.5</span> Areas under a curve</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-15">Example</a></li>
+<li><a class="nav-link" href="#example-16">Example</a></li>
+<li><a class="nav-link" href="#example-17">Example</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>MSIN0011 Mathematics 1 (Calculus and Modelling) Preparation Material</strong>" was written by Matthew M. Jones. It was last built on 2022-09-29.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
