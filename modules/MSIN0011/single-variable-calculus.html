@@ -31,7 +31,7 @@
 
     <div class="d-flex align-items-start justify-content-between">
       <div class="logo-title-box">
-      <img id="cover" class="d-none d-lg-block" src="img/High%20Resolution%20Logo%20-%20Transparent%20Background.png"><h1>
+      <img id="cover" class="d-none d-lg-block" src="img/ucl_logo.png"><h1>
         <a href="index.html" title="">MSIN0011 Mathematics 1 (Calculus and Modelling)</a>
       </h1>
       </div>
@@ -109,7 +109,7 @@ If we can find this limit then we call it the <strong>derivative of <span class=
                                 &amp;= \frac{4h + h^2}h
     \end{aligned}
 \]</span>
-The graph of this function is given in Figure @ref{fig:derivativecalculationexample}.</p>
+The graph of this function is given in Figure <a href="single-variable-calculus.html#fig:derivativecalculationexample">2.3</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:derivativecalculationexample"></span>
 <iframe src="https://www.desmos.com/calculator/qncxpoj6hc?embed" width="100%" height="400px" data-external="1">
@@ -135,7 +135,7 @@ This is the example we have seen previously. The limit
 <span class="math display">\[\lim_{h\to 0} \frac{g(0 + h) - g(0)}h \]</span>
 does not exist.</p>
 <p>Therefore, <span class="math inline">\(|x|\)</span> does not have a derivative at <span class="math inline">\(0\)</span>.</p>
-<p>In fact this is self-evident if you consider the graph. There is no tangent at the point <span class="math inline">\((0,0)\)</span> in its graph, Figure @ref{fig:modulusgraph}.</p>
+<p>In fact this is self-evident if you consider the graph. There is no tangent at the point <span class="math inline">\((0,0)\)</span> in its graph, Figure <a href="single-variable-calculus.html#fig:modulusgraph">2.4</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:modulusgraph"></span>
 <iframe src="https://www.desmos.com/calculator/a9gx9pdewl?embed" width="100%" height="400px" data-external="1">
@@ -247,36 +247,11 @@ which doesn’t have a limit at <span class="math inline">\(0\)</span>.</p>
 <li>In general, <span class="math inline">\(C^n(X)\)</span> is the set of all functions that have <span class="math inline">\(n\)</span> continuous derivatives.</li>
 <li>The set <span class="math inline">\(C^\infty (X)\)</span> denotes the collection of functions that have derivatives of <strong>all</strong> orders. These functions are often called <strong>smooth</strong> functions.</li>
 </ul>
+<!-- ## Approximating differentiable functions --><!-- If $f\in C^1(\mathbb{R})$ the equation of a tangent to the curve $y=f(x)$ at the point $(x_0, f(x_0))$ is given by --><!-- $$ --><!-- y = f(x_0) + f'(x_0)(x-x_0)  --><!-- $$ --><!-- Since the tangent approximates the graph of $f$ this gives us the following useful approximation to $f(x)$ for values of $x$ close to $x_0$ --><!-- $$ --><!-- f(x) \approx f(x_0) + f'(x_0)(x-x_0). --><!-- $$ --><!-- For example, for $x$ near $1$, --><!-- $$ --><!-- \sqrt{x} \approx 1 +  \frac{1}2 (x-1) --><!-- $$ --><!-- This can be generalised to functions $f\in C^n(X)$. This is called the **Taylor polynomial**. --><!-- $$ --><!-- f(x) \approx f(x_0) + f'(x_0) (x-x_0) + \cdots + \frac{f^{(n)} (x_0)}{n!} (x-x_0)^n. --><!-- $$ --><!-- For example, --><!-- $$ --><!-- \sqrt{x} \approx 1+\frac{1}{2}(x-1)-\frac{1}{8} (x-1)^2+\frac{1}{16} (x-1)^3. --><!-- $$ --><!-- These can provide useful approximations for functions, but we will see they have much more practical use in obtaining information about functions from their derivatives. -->
 </div>
-<div id="approximating-differentiable-functions" class="section level2" number="2.6">
+<div id="applications-of-the-limit-integration" class="section level2" number="2.6">
 <h2>
-<span class="header-section-number">2.6</span> Approximating differentiable functions<a class="anchor" aria-label="anchor" href="#approximating-differentiable-functions"><i class="fas fa-link"></i></a>
-</h2>
-<p>If <span class="math inline">\(f\in C^1(\mathbb{R})\)</span> the equation of a tangent to the curve <span class="math inline">\(y=f(x)\)</span> at the point <span class="math inline">\((x_0, f(x_0))\)</span> is given by</p>
-<p><span class="math display">\[
-y = f(x_0) + f'(x_0)(x-x_0)
-\]</span>
-Since the tangent approximates the graph of <span class="math inline">\(f\)</span> this gives us the following useful approximation to <span class="math inline">\(f(x)\)</span> for values of <span class="math inline">\(x\)</span> close to <span class="math inline">\(x_0\)</span></p>
-<p><span class="math display">\[
-f(x) \approx f(x_0) + f'(x_0)(x-x_0).
-\]</span>
-For example, for <span class="math inline">\(x\)</span> near <span class="math inline">\(1\)</span>,
-<span class="math display">\[
-\sqrt{x} \approx 1 +  \frac{1}2 (x-1)
-\]</span></p>
-<p>This can be generalised to functions <span class="math inline">\(f\in C^n(X)\)</span>. This is called the <strong>Taylor polynomial</strong>.</p>
-<p><span class="math display">\[
-f(x) \approx f(x_0) + f'(x_0) (x-x_0) + \cdots + \frac{f^{(n)} (x_0)}{n!} (x-x_0)^n.
-\]</span>
-For example,</p>
-<p><span class="math display">\[
-\sqrt{x} \approx 1+\frac{1}{2}(x-1)-\frac{1}{8} (x-1)^2+\frac{1}{16} (x-1)^3.
-\]</span>
-These can provide useful approximations for functions, but we will see they have much more practical use in obtaining information about functions from their derivatives.</p>
-</div>
-<div id="applications-of-the-limit-integration" class="section level2" number="2.7">
-<h2>
-<span class="header-section-number">2.7</span> Applications of the limit: integration<a class="anchor" aria-label="anchor" href="#applications-of-the-limit-integration"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.6</span> Applications of the limit: integration<a class="anchor" aria-label="anchor" href="#applications-of-the-limit-integration"><i class="fas fa-link"></i></a>
 </h2>
 <p>The integral of a function between two points <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is the signed area between the graph of the function and the horizontal axis for <span class="math inline">\(x \in [a,b]\)</span>, where “signed” means areas underneath the axis count negatively to the total area, as in Figure <a href="single-variable-calculus.html#fig:anintegral">2.5</a>.</p>
 <div class="figure" style="text-align: center">
@@ -308,14 +283,14 @@ Figure 2.6: The definition of the integral
 <p>The important thing to understand is that if we think of the integral of a function as the area between its graph and the horizontal azis, then this makes sense even for functions that are not continuous.</p>
 <p>Note: all the common rules of integration follow from this description of the integral.</p>
 </div>
-<div id="the-fundamental-theorem-of-calculus" class="section level2" number="2.8">
+<div id="the-fundamental-theorem-of-calculus" class="section level2" number="2.7">
 <h2>
-<span class="header-section-number">2.8</span> The fundamental theorem of calculus<a class="anchor" aria-label="anchor" href="#the-fundamental-theorem-of-calculus"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.7</span> The fundamental theorem of calculus<a class="anchor" aria-label="anchor" href="#the-fundamental-theorem-of-calculus"><i class="fas fa-link"></i></a>
 </h2>
 <p>We can bring all of these three ideas together: continuity, differentiation and integration. This highlights the link between integration and differentiation. It is called the Fundamental Theorem of Calculus.</p>
-<div id="fundamental-theorem-of-calculus" class="section level3" number="2.8.1">
+<div id="fundamental-theorem-of-calculus" class="section level3" number="2.7.1">
 <h3>
-<span class="header-section-number">2.8.1</span> Fundamental Theorem of Calculus<a class="anchor" aria-label="anchor" href="#fundamental-theorem-of-calculus"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.7.1</span> Fundamental Theorem of Calculus<a class="anchor" aria-label="anchor" href="#fundamental-theorem-of-calculus"><i class="fas fa-link"></i></a>
 </h3>
 <p>Let <span class="math inline">\(f\colon [a,b] \to\mathbb{R}\)</span>, and define
 <span class="math display">\[\begin{equation}
@@ -374,9 +349,9 @@ cannot be evaluated using the method you would normaly use, even though calculat
 Figure 2.8: An example of an function without an antiderivative
 </p>
 </div>
-<p>However, if we define <span class="math inline">\(G(x)\)</span> as in the theorem then
+<p>However, if we define <span class="math inline">\(F(x)\)</span> as in the theorem then
 <span class="math display">\[
-    G(x) =  \begin{cases}
+    F(x) =  \begin{cases}
                 -x, &amp; x &lt;0; \\
                 x, &amp; x\ge 0.
             \end{cases}
@@ -384,9 +359,9 @@ Figure 2.8: An example of an function without an antiderivative
 You might recognise this as <span class="math inline">\(|x|\)</span>. And we have already seen that this can’t be differentiated at <span class="math inline">\(x = 0\)</span>.</p>
 </div>
 </div>
-<div id="improper-integrals" class="section level2" number="2.9">
+<div id="improper-integrals" class="section level2" number="2.8">
 <h2>
-<span class="header-section-number">2.9</span> Improper integrals<a class="anchor" aria-label="anchor" href="#improper-integrals"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.8</span> Improper integrals<a class="anchor" aria-label="anchor" href="#improper-integrals"><i class="fas fa-link"></i></a>
 </h2>
 <p>So far we’ve seen integrals over intervals <span class="math inline">\([a,b]\)</span>. We also need to understand integrals over an <strong>unbounded</strong> interval - this means integrals where one or both of the limits are <span class="math inline">\(\pm\infty\)</span>.</p>
 <p>For example, what is
@@ -404,9 +379,9 @@ If we think of <span class="math inline">\(y\)</span> as being a very large numb
 \]</span></p>
 <p>Of course we haven’t encountered limits at infinity before. So let’s pause and gather some information.</p>
 </div>
-<div id="limits-at-infinity" class="section level2" number="2.10">
+<div id="limits-at-infinity" class="section level2" number="2.9">
 <h2>
-<span class="header-section-number">2.10</span> Limits at infinity<a class="anchor" aria-label="anchor" href="#limits-at-infinity"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.9</span> Limits at infinity<a class="anchor" aria-label="anchor" href="#limits-at-infinity"><i class="fas fa-link"></i></a>
 </h2>
 <p>Suppose <span class="math inline">\(f\colon [0,\infty) \to \mathbb{R}\)</span> is a function. We say that <span class="math inline">\(f(x)\)</span> has a limit at infinity, <span class="math inline">\(L\)</span> say, written
 <span class="math display">\[
@@ -414,15 +389,15 @@ If we think of <span class="math inline">\(y\)</span> as being a very large numb
 \]</span>
 if <span class="math inline">\(f(x)\)</span> gets closer and closer to <span class="math inline">\(L\)</span> (and only <span class="math inline">\(L\)</span>) as <span class="math inline">\(x\)</span> gets larger and larger. More formally, if <span class="math inline">\(f(x)\)</span> is as close to <span class="math inline">\(L\)</span> as we like for large values of <span class="math inline">\(x\)</span>.</p>
 <p>It is more useful to understand this by studying examples. First we have the following facts about limits.</p>
-<div id="theorem-3" class="section level3" number="2.10.1">
+<div id="theorem-3" class="section level3" number="2.9.1">
 <h3>
-<span class="header-section-number">2.10.1</span> Theorem 3<a class="anchor" aria-label="anchor" href="#theorem-3"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.9.1</span> Theorem 3<a class="anchor" aria-label="anchor" href="#theorem-3"><i class="fas fa-link"></i></a>
 </h3>
 <p>If <span class="math inline">\(L = \lim_{x\to \infty} f(x)\)</span> then <span class="math inline">\(L\)</span> is unique - i.e. it is not possible for a function to tend to two or more different limits.</p>
 </div>
-<div id="theorem-4" class="section level3" number="2.10.2">
+<div id="theorem-4" class="section level3" number="2.9.2">
 <h3>
-<span class="header-section-number">2.10.2</span> Theorem 4<a class="anchor" aria-label="anchor" href="#theorem-4"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.9.2</span> Theorem 4<a class="anchor" aria-label="anchor" href="#theorem-4"><i class="fas fa-link"></i></a>
 </h3>
 <p>If <span class="math inline">\(L = \lim_{x\to \infty} f(x)\)</span> and <span class="math inline">\(M = \lim_{x\to \infty} g(x)\)</span> then:</p>
 <ol style="list-style-type: decimal">
@@ -433,9 +408,9 @@ if <span class="math inline">\(f(x)\)</span> gets closer and closer to <span cla
 </li>
 </ol>
 </div>
-<div id="example-1-rational-functions" class="section level3" number="2.10.3">
+<div id="example-1-rational-functions" class="section level3" number="2.9.3">
 <h3>
-<span class="header-section-number">2.10.3</span> Example 1: rational functions<a class="anchor" aria-label="anchor" href="#example-1-rational-functions"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.9.3</span> Example 1: rational functions<a class="anchor" aria-label="anchor" href="#example-1-rational-functions"><i class="fas fa-link"></i></a>
 </h3>
 <p>A <strong>rational function</strong> is a function of the form <span class="math inline">\(p(x) / q(x)\)</span> where <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> are polynomials.</p>
 <p>For example, suppose <span class="math inline">\(f(x) = 1 / x^2\)</span>. Then as we argued earlier, the value of <span class="math inline">\(1/x^2\)</span> gets smaller and smaller as <span class="math inline">\(x\)</span> gets larger and larger. So for this reason,
@@ -495,9 +470,9 @@ Here we go back to our limit definition of this improper integral.</p>
 \]</span></p>
 </div>
 </div>
-<div id="applications-of-the-integral-the-mean-value" class="section level2" number="2.11">
+<div id="applications-of-the-integral-the-mean-value" class="section level2" number="2.10">
 <h2>
-<span class="header-section-number">2.11</span> Applications of the integral: The mean value<a class="anchor" aria-label="anchor" href="#applications-of-the-integral-the-mean-value"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.10</span> Applications of the integral: The mean value<a class="anchor" aria-label="anchor" href="#applications-of-the-integral-the-mean-value"><i class="fas fa-link"></i></a>
 </h2>
 <p>Suppose <span class="math inline">\(f\colon [a,b] \to \mathbb{R}\)</span>. The <strong>mean value</strong> of <span class="math inline">\(f\)</span> over the interval <span class="math inline">\([a,b]\)</span> is given by the formula:</p>
 <p><span class="math display">\[
@@ -518,9 +493,9 @@ The average interest rate over the four years is
 \frac{1}4 \int_0^4 r(t)\,\mathrm{d}t = \frac{41}{16} \approx 2.56
 \]</span></p>
 </div>
-<div id="extension-material-optional" class="section level2" number="2.12">
+<div id="extension-material-optional" class="section level2" number="2.11">
 <h2>
-<span class="header-section-number">2.12</span> Extension material (optional)<a class="anchor" aria-label="anchor" href="#extension-material-optional"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.11</span> Extension material (optional)<a class="anchor" aria-label="anchor" href="#extension-material-optional"><i class="fas fa-link"></i></a>
 </h2>
 <p>The function
 <span class="math display">\[
@@ -578,21 +553,20 @@ Figure 2.9: The graph of the floor function
 <li><a class="nav-link" href="#differentiable-implies-continuous"><span class="header-section-number">2.3</span> Differentiable implies continuous</a></li>
 <li><a class="nav-link" href="#higher-order-derivatives"><span class="header-section-number">2.4</span> Higher order derivatives</a></li>
 <li><a class="nav-link" href="#smoothness-of-functions"><span class="header-section-number">2.5</span> Smoothness of functions</a></li>
-<li><a class="nav-link" href="#approximating-differentiable-functions"><span class="header-section-number">2.6</span> Approximating differentiable functions</a></li>
-<li><a class="nav-link" href="#applications-of-the-limit-integration"><span class="header-section-number">2.7</span> Applications of the limit: integration</a></li>
+<li><a class="nav-link" href="#applications-of-the-limit-integration"><span class="header-section-number">2.6</span> Applications of the limit: integration</a></li>
 <li>
-<a class="nav-link" href="#the-fundamental-theorem-of-calculus"><span class="header-section-number">2.8</span> The fundamental theorem of calculus</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#fundamental-theorem-of-calculus"><span class="header-section-number">2.8.1</span> Fundamental Theorem of Calculus</a></li></ul>
+<a class="nav-link" href="#the-fundamental-theorem-of-calculus"><span class="header-section-number">2.7</span> The fundamental theorem of calculus</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#fundamental-theorem-of-calculus"><span class="header-section-number">2.7.1</span> Fundamental Theorem of Calculus</a></li></ul>
 </li>
-<li><a class="nav-link" href="#improper-integrals"><span class="header-section-number">2.9</span> Improper integrals</a></li>
+<li><a class="nav-link" href="#improper-integrals"><span class="header-section-number">2.8</span> Improper integrals</a></li>
 <li>
-<a class="nav-link" href="#limits-at-infinity"><span class="header-section-number">2.10</span> Limits at infinity</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#theorem-3"><span class="header-section-number">2.10.1</span> Theorem 3</a></li>
-<li><a class="nav-link" href="#theorem-4"><span class="header-section-number">2.10.2</span> Theorem 4</a></li>
-<li><a class="nav-link" href="#example-1-rational-functions"><span class="header-section-number">2.10.3</span> Example 1: rational functions</a></li>
+<a class="nav-link" href="#limits-at-infinity"><span class="header-section-number">2.9</span> Limits at infinity</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#theorem-3"><span class="header-section-number">2.9.1</span> Theorem 3</a></li>
+<li><a class="nav-link" href="#theorem-4"><span class="header-section-number">2.9.2</span> Theorem 4</a></li>
+<li><a class="nav-link" href="#example-1-rational-functions"><span class="header-section-number">2.9.3</span> Example 1: rational functions</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#applications-of-the-integral-the-mean-value"><span class="header-section-number">2.11</span> Applications of the integral: The mean value</a></li>
-<li><a class="nav-link" href="#extension-material-optional"><span class="header-section-number">2.12</span> Extension material (optional)</a></li>
+<li><a class="nav-link" href="#applications-of-the-integral-the-mean-value"><span class="header-section-number">2.10</span> Applications of the integral: The mean value</a></li>
+<li><a class="nav-link" href="#extension-material-optional"><span class="header-section-number">2.11</span> Extension material (optional)</a></li>
 </ul>
 
       <div class="book-extra">
@@ -609,7 +583,7 @@ Figure 2.9: The graph of the floor function
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>MSIN0011 Mathematics 1 (Calculus and Modelling)</strong>" was written by Matthew M. Jones. It was last built on 2022-09-15.</p>
+    <p>"<strong>MSIN0011 Mathematics 1 (Calculus and Modelling)</strong>" was written by Matthew M. Jones. It was last built on 2022-10-11.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
