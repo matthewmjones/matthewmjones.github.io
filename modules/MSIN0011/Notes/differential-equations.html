@@ -75,32 +75,28 @@
 <h3>
 <span class="header-section-number">6.1.1</span> Example - free market economics<a class="anchor" aria-label="anchor" href="#example---free-market-economics"><i class="fas fa-link"></i></a>
 </h3>
-<p>The economist Adam Smith (not your MSIN0010 lecturer) said that an economy is a <strong>free market</strong> if the following three laws are the only ones that rule the change in price and excess demand (the difference between supply and demand):</p>
+<p>The economist Adam Smith said that in a <strong>free market</strong> we have the following:</p>
 <p>If at a given time,</p>
 <ol style="list-style-type: decimal">
 <li>demand is less than supply, then prices decrease so the demand increased;</li>
 <li>demand is greater than supply, then prices increase, so the supply increases</li>
-<li>demand equals supply, then prices are constant, so the excess deman remains constant</li>
+<li>demand equals supply, then prices are constant, so the excess demand remains constant</li>
 </ol>
-<p>In order to model this we first need to introduce some notation. We’ll call <span class="math inline">\(s(t)\)</span> the supply, <span class="math inline">\(d(t)\)</span> the demand, and <span class="math inline">\(r(t) = d(t) - s(t)\)</span> the excess demand.
-Assume these functions are differentiable, the laws then become:</p>
+<p>In this situation the main variable is time. So we’ll use a variable <span class="math inline">\(t\)</span> to describe this, we also need to pick the units which could be days, weeks, years etc. We’ll pick years as our units.</p>
+<p>Next we will introduce a function <span class="math inline">\(r\colon [0,\infty) \to\mathbb{R}\)</span> that represents the difference between demand and supply:</p>
+<p><span class="math display">\[r(t) = \text{demand at time }t - \text{supply at time }t\]</span>
+If we assume that <span class="math inline">\(r\)</span> can be differentiated for any value of <span class="math inline">\(t\)</span> then the statement that demand is increasing means <span class="math inline">\(r\)</span> is increasing, and so <span class="math inline">\(r'(t) &gt; 0\)</span>. We can similarly translate all the rules above:</p>
 <ol style="list-style-type: decimal">
-<li>If <span class="math inline">\(r(t) &lt; 0\)</span> then <span class="math inline">\(p'(t) &lt; 0\)</span> and so <span class="math inline">\(r'(t) &gt; 0\)</span>;</li>
-<li>If <span class="math inline">\(r(t) &gt; 0\)</span> then <span class="math inline">\(p'(t) &gt; 0\)</span> and so <span class="math inline">\(r'(t) &lt; 0\)</span>;</li>
-<li>If <span class="math inline">\(r(t) = 0\)</span> then <span class="math inline">\(p'(t) = 0\)</span> and so <span class="math inline">\(r'(t) = 0\)</span>.</li>
+<li>If <span class="math inline">\(r(t) &lt; 0\)</span> then <span class="math inline">\(r(t)\)</span> increases, so <span class="math inline">\(r'(t) &gt; 0\)</span>;</li>
+<li>If <span class="math inline">\(r(t) &gt; 0\)</span> then <span class="math inline">\(r(t)\)</span> decreases, so <span class="math inline">\(r'(t) &lt; 0\)</span>;</li>
+<li>If <span class="math inline">\(r(t) = 0\)</span> then <span class="math inline">\(r'(t) = 0\)</span>.</li>
 </ol>
-<p>So we can deal only with <span class="math inline">\(r\)</span> and <span class="math inline">\(r'\)</span> and <span class="math inline">\(p'\)</span>. Looking at these rules we can see that <span class="math inline">\(r'\)</span> and <span class="math inline">\(r\)</span> always have the opposite sign.</p>
-<p>We might model this by saying that there are constants <span class="math inline">\(a &gt; 0\)</span> and <span class="math inline">\(b &gt; 0\)</span> so that
-<span class="math display">\[
-\begin{aligned}
-    r'(t) &amp;= -a r(t)\\
-    p'(t) &amp;= b r(t)
-\end{aligned}
-\]</span>
+<p>Looking at these we can see that <span class="math inline">\(r'\)</span> and <span class="math inline">\(r\)</span> always have the opposite sign. So we might model this by saying that there are constants <span class="math inline">\(a &gt; 0\)</span> so that
+<span class="math display">\[r'(t) = -a r(t)\]</span>
 This example gives us an interesting (but probably not hugely convincing) mathematical model of a free market.</p>
 <p>Notice a few typical properties of the model:</p>
 <ul>
-<li>We have quantities that change, often with time but not always. We write these as fuctions.</li>
+<li>We have quantities that change, often with time but not always. We write these as functions.</li>
 <li>We introduce some relationships that we believe might link the quantities. We write these are equations between the functions, variables, derivatives etc.</li>
 </ul>
 </div>
@@ -115,81 +111,43 @@ This example gives us an interesting (but probably not hugely convincing) mathem
 <h3>
 <span class="header-section-number">6.2.1</span> Example - free market continued<a class="anchor" aria-label="anchor" href="#example---free-market-continued"><i class="fas fa-link"></i></a>
 </h3>
-<p>If we consider the first equation we had in the free market model, <span class="math inline">\(r'(t) = -a r(t)\)</span>
-we can check that the function <span class="math inline">\(r(t) = e^{-at}\)</span>
+<p>If we consider the equation we had in the free market model, <span class="math inline">\(r'(t) = - r(t)\)</span>
+we can check that the function <span class="math inline">\(r(t) = e^{-t}\)</span>
 satisfies this differential equation since
-<span class="math display">\[r'(t) = -a e^{-at} = -a r(t).\]</span>
-The second equation was <span class="math inline">\(p'(t) = b r(t)\)</span>
-which we can now write as <span class="math inline">\(p'(t) = b e^{-at}.\)</span></p>
-<p>We can integrate this to get
-<span class="math display">\[p(t) = \int b e^{-at} \,\mathrm{d}t = -\frac{b}a e^{-at}.\]</span>
-These aren’t the only solutions however, the function, <span class="math inline">\(r(t) = 2e^{-at}\)</span> is also a solution to the first equation. So is <span class="math inline">\(r(t) = -10 e^{-at}\)</span>. In fact for any real number <span class="math inline">\(A\)</span> the function
-<span class="math display">\[r(t) = Ae^{-at}\]</span>
+<span class="math display">\[r'(t) = - e^{-t} = - r(t).\]</span>
+These aren’t the only solutions however, the function, <span class="math inline">\(r(t) = 2e^{-t}\)</span> is also a solution to the first equation. So is <span class="math inline">\(r(t) = -10 e^{-t}\)</span>. In fact for any real number <span class="math inline">\(A\)</span> the function
+<span class="math display">\[r(t) = Ae^{-t}\]</span>
 is a solution.</p>
-<p>Similarly you may have noticed we didn’t include the constant of integration in the calculation of <span class="math inline">\(p'(t)\)</span>. If we do, and call it <span class="math inline">\(B\)</span>, then we get
-<span class="math display">\[p(t) = \int b Ae^{-at} \,\mathrm{d}t = -A\frac{b}a e^{-at} + B.\]</span>
-These two solutions are called the <strong>general solution</strong> to the differential equation.</p>
-</div>
-<div id="example---probability" class="section level3" number="6.2.2">
-<h3>
-<span class="header-section-number">6.2.2</span> Example - probability<a class="anchor" aria-label="anchor" href="#example---probability"><i class="fas fa-link"></i></a>
-</h3>
-<p>Suppose at a particular coffee shop the length of time it takes for you to get served is random. You notice that if you know that it is going to take at least <span class="math inline">\(x\)</span>s then the probability that it takes an extra <span class="math inline">\(y\)</span>s is independent. In other words,
-<span class="math display">\[P(X &gt; x + y \mid X &gt; x ) = P(X &gt; y)\]</span>
-This is the so-called <strong>memoryless</strong> property since knowing that <span class="math inline">\(X &gt; x\)</span> means any additional wait in the queue is independent.</p>
-<p>If we let <span class="math inline">\(g(x) = P(X &gt; x)\)</span> then since <span class="math inline">\(X\ge 0\)</span>, the domain of <span class="math inline">\(g\)</span> is <span class="math inline">\([0,\infty)\)</span>. We also know,
-<span class="math display">\[g(0) = 1, \qquad \lim_{x\to\infty} g(x) = 0\]</span>
-Using Bayes’s Theorem
-<span class="math display">\[
-\begin{aligned}
-    P(X &gt; x + y \mid X &gt; x ) &amp;= \frac{P(X &gt; x + y \wedge X &gt; x )}{P(X&gt;x)}\\
-                &amp;= \frac{P(X &gt; x + y)}{P(X &gt; x)} = \frac{g(x+y)}{g(x)}
-\end{aligned}
-\]</span>
-Hence the memoryless property becomes <span class="math inline">\(\dfrac{g(x+y)}{g(x)} = g(y)\)</span>,
-or simply
-<span class="math display">\[g(x + y) = g(x) g(y)\]</span>
-Now we can calculate the derivative of this function at <span class="math inline">\(x\)</span>
-<span class="math display">\[
-\begin{aligned}
-    g'(x) &amp;= \lim_{y\to 0} \frac{g(x+y) - g(x)}{y} = \lim_{y\to 0} \frac{g(x)g(y) - g(x)}{y} \\
-          &amp;= g(x) \lim_{y\to 0} \frac{g(y) - 1}{y} = g(x) \lim_{y\to 0} \frac{g(y) - g(0)}{y} \\
-          &amp;= g'(0) g(x)
-\end{aligned}
-\]</span>
-It can be shown that <span class="math inline">\(g'(0) &lt; 0\)</span>, we will write <span class="math inline">\(-\lambda = g'(0)\)</span>. So <span class="math inline">\(g\)</span> is a solution to the differential equation
-<span class="math display">\[ g' = -\lambda g.\]</span>
-This is the same equation we had before, its solution is
-<span class="math display">\[g(x) = A e^{-\lambda x}.\]</span>
-This is the <strong>general solution</strong> to this differential equation.</p>
-<p>In this example we can do better. We know that <span class="math inline">\(g(0) = 1\)</span>. So
-<span class="math display">\[1 = A e^{-\lambda \times 0} = A.\]</span>
-Therefore,
-<span class="math display">\[g(x) = e^{-\lambda x}.\]</span>
-The condition <span class="math inline">\(g(0)=1\)</span> is called an <strong>initial condition</strong> since it gives the value of the solution at the initial point, <span class="math inline">\(x=0\)</span>. It allows us to find the value(s) of constants in the general solution.</p>
-<p>Continuing this example, the cummulative distribution function is <span class="math inline">\(F(x) = 1- P(X&gt;x) = 1-g(x)\)</span>. So <span class="math inline">\(F(x) = 1 - e^{-\lambda x}\)</span> and therefore <span class="math inline">\(X\)</span> is <strong>exponentially distributed</strong> <span class="math inline">\(X\sim Exp(\lambda)\)</span>.</p>
-<p>These two examples show that differential equations are an important tool for examining problems that occur in all sorts of areas.</p>
+<p>This solution is called the <strong>general solution</strong> to the differential equation. General solutions normally include a constant (<span class="math inline">\(A\)</span> here) that we don’t know.</p>
+<p>Sometimes we have more information about a solution, for example we might know that initially, when <span class="math inline">\(t=0\)</span>, <span class="math inline">\(r(0) = 2\)</span>. We can use this to find the value of the constant by substituting this into the general solution.</p>
+<p><span class="math display">\[2 = r(0) = Ae^{-0} = A.\]</span></p>
+<p>This tells us that our solution is <span class="math inline">\(r(t) = 2 e^{-t}\)</span>.</p>
+<p>The condition <span class="math inline">\(r(0)=2\)</span> is an example of an <strong>initial condition</strong> since it gives the value of the solution at the initial point, <span class="math inline">\(t=0\)</span>. It allows us to find the value(s) of constants in the general solution.</p>
 </div>
 </div>
 <div id="first-order-differential-equtions" class="section level2" number="6.3">
 <h2>
 <span class="header-section-number">6.3</span> First order differential equtions<a class="anchor" aria-label="anchor" href="#first-order-differential-equtions"><i class="fas fa-link"></i></a>
 </h2>
+<p>In this section we’ll introduce what we mean by a differential equation before we learn how to solve them.</p>
 <p>A <strong>first order ordinary differential equation</strong> is an equation of the form
 <span class="math display">\[F(x, y, y') = 0,\]</span>
 where <span class="math inline">\(F\)</span> is a function - it is called first order since it only includes the first derivative <span class="math inline">\(y'\)</span>. Here <span class="math inline">\(x\)</span> is called the <strong>independent variable</strong> and <span class="math inline">\(y\)</span> is the <strong>dependent variable</strong>.</p>
+<p>For example, in the free market example the differential equation was,
+<span class="math display">\[r'(t) = - r(t)\]</span>
+so here <span class="math inline">\(r\)</span> is the dependent variable, and <span class="math inline">\(t\)</span> is the independent variable.</p>
 <p>A <strong>solution</strong> is a function <span class="math inline">\(f(x)\)</span> so that
 <span class="math display">\[F(x,f(x), f'(x)) = 0\]</span>
-for all <span class="math inline">\(x\)</span>.</p>
-<p>Some examples are given below (<span class="math inline">\(a\)</span> and <span class="math inline">\(r\)</span> are constants):
+for all <span class="math inline">\(x\)</span>. A solution need not be unique, as we saw with the free market example.</p>
+<p>Some examples are given below (<span class="math inline">\(a\)</span>, <span class="math inline">\(M\)</span> and <span class="math inline">\(r\)</span> are constants):
 <span class="math display">\[
 \begin{aligned}
     y' &amp;= k (M - y) \qquad\text{Newton's law of cooling}\\
     y' &amp;= a y \qquad\qquad\quad\text{exponential decay/growth}\\
     y' &amp;= r y(1-y) \qquad\text{logistic growth}\\
 \end{aligned}
-\]</span></p>
-<p><strong>Note:</strong> since both dependent variable <span class="math inline">\(y\)</span> and independent variable <span class="math inline">\(x\)</span> often appear together in a differential equation do make sure you know which is which. Often for example if the independent variable is time, it is denoted by the letter <span class="math inline">\(t\)</span>.</p>
+\]</span>
+<strong>Note:</strong> since both dependent variable <span class="math inline">\(y\)</span> and independent variable <span class="math inline">\(x\)</span> often appear together in a differential equation do make sure you know which is which. Often for example if the independent variable is time, it is denoted by the letter <span class="math inline">\(t\)</span> as we saw previously.</p>
 <p>A differential equation together with an initial condition is called an <strong>initial value problem</strong>.</p>
 </div>
 <div id="solving-differential-equations---integration" class="section level2" number="6.4">
@@ -366,10 +324,7 @@ Substituting the initial condition in we find the solution is
 <a class="nav-link" href="#modelling"><span class="header-section-number">6.1</span> Modelling</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#example---free-market-economics"><span class="header-section-number">6.1.1</span> Example - free market economics</a></li></ul>
 </li>
 <li>
-<a class="nav-link" href="#differential-equations-and-their-solutions"><span class="header-section-number">6.2</span> Differential Equations and their solutions</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#example---free-market-continued"><span class="header-section-number">6.2.1</span> Example - free market continued</a></li>
-<li><a class="nav-link" href="#example---probability"><span class="header-section-number">6.2.2</span> Example - probability</a></li>
-</ul>
+<a class="nav-link" href="#differential-equations-and-their-solutions"><span class="header-section-number">6.2</span> Differential Equations and their solutions</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#example---free-market-continued"><span class="header-section-number">6.2.1</span> Example - free market continued</a></li></ul>
 </li>
 <li><a class="nav-link" href="#first-order-differential-equtions"><span class="header-section-number">6.3</span> First order differential equtions</a></li>
 <li>
@@ -403,7 +358,7 @@ Substituting the initial condition in we find the solution is
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>MSIN0011 Mathematics 1 (Calculus and Modelling)</strong>" was written by Matthew M. Jones. It was last built on 2022-09-29.</p>
+    <p>"<strong>MSIN0011 Mathematics 1 (Calculus and Modelling)</strong>" was written by Matthew M. Jones. It was last built on 2022-11-21.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
