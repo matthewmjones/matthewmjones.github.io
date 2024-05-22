@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Portfolio Details - Research</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,8 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,13 +76,12 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2>Research</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
+            <li>Research details</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
@@ -112,22 +110,70 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
+
+            <!-- Start of references using BiBTeX-JS -->
+
+            <bibtex src="assets/bibtex/refs.bib"></bibtex>
+            <div id="bibtex_display">
+            </div>
+
+            <div class="bibtex_structure">
+                <div class="sort year" extra="ASC number">
+                  <ol>
+                  <div class="templates"></div>
+                </ol>
+                </div>
+            </div>
+
+            <div class="bibtex_template">
+              <li>
+                <span class="author"></span>
+                <span class="if year">
+                  (<span class="year"></span>).
+                </span>
+                <a class="url" target="_blank"><span class="title"></span></a>.
+                <span class="if journal">
+                  <span class="journal" style="font-style: italic;"></span>.
+                </span>
+                <span class="if booktitle">
+                  In <span class="booktitle" style="font-style: italic;"></span>.
+                </span>
+                <span class="if school">
+                  <i>Masters thesis,</i><span class="school"></span>.
+                </span>
+                <span class="if volume" style="font-style: italic;">
+                  <span class="volume"></span>
+                  <span class="if number" style="font-style: italic;">(<span class="number"></span>)</span>,
+                  <span class="if pages">
+                    <span class="pages"></span>.
+                  </span>
+                </span>
+                <span class="if edition">
+                  <span class="edition"></span> ed.,
+                </span>
+                <span class="if publisher">
+                  <span class="publisher"></span>.
+                </span>
+            </div>
+          </li>
           </div>
+          <!-- End of references -->
 
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Research</li>
+                <li><strong>Work URL</strong>: <a href="https://profiles.ucl.ac.uk/85828-matt-jones/publications">profiles.ucl.ac.uk/85828-matt-jones/publications</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Research</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                My research covers two main areas: pure mathematics and mathematics education. My mathematics research centres around the study of <strong>composition operators</strong>, a specific type of linear operator acting on a Banach space of analytic functions. The main thrust of this research is to understand the relationship between the operator theoretic properties of the composition and the complex analytic properties of its inducing mapping. 
+              </p>
+              <p>
+                In the area of mathematics education my interests are broadly in developing a practical understanding of influences on the teaching of higher level mathematics skills. 
               </p>
             </div>
           </div>
@@ -164,6 +210,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- BiBTeX to JS File (https://github.com/pcooksey/bibtex-js)-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 
 </body>
 
